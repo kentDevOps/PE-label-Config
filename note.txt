@@ -1,0 +1,40 @@
+pyside6-uic peV2.ui -o guide.py
+pyside6-rcc images.qrc -o images.py
+pyside6-uic retail.ui -o retail_ui.py
+pyside6-uic bob.ui -o bob_view.py
+pyside6-uic loadSku.ui -o loadSku_ui.py
+
+khi không chọn đc interpreter python
+
+Đóng VS Code.
+
+Mở thư mục cache:
+
+Windows:
+
+%USERPROFILE%\AppData\Roaming\Code\User\workspaceStorage
+
+
+Tìm thư mục liên quan đến project của bạn và xóa.
+
+Mở lại VS Code → nó sẽ tạo cache mới và load lại interpreter.
+pyinstaller --onefile --noconsole --exclude matplotlib --exclude scipy --icon=nhen.ico --name="PE Label Config Tool" main.py
+pyinstaller --onedir --noconsole --exclude matplotlib --exclude scipy --icon=nhen.ico --name="PE Label Config Tool" main.py
+pyinstaller main.py --onedir --noconsole --strip --optimize=2 `
+  --exclude-module matplotlib `
+  --exclude-module scipy `
+  --exclude-module sympy `
+  --exclude-module IPython `
+  --exclude-module tkinter `
+  --exclude-module PyQt5 `
+  --exclude-module sklearn `
+  --exclude-module PySide6.QtWebEngineWidgets `
+  --exclude-module PySide6.QtWebEngineCore `
+  --exclude-module PySide6.QtWebEngine `
+  --exclude-module PySide6.QtWebChannel `
+  --exclude-module PySide6.QtMultimedia `
+  --exclude-module PySide6.QtMultimediaWidgets `
+  --exclude-module PySide6.QtQml `
+  --exclude-module PySide6.QtQuick `
+  --icon=nhen.ico `
+  --name="PE Label Config Tool"

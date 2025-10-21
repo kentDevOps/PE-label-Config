@@ -1,0 +1,964 @@
+
+[2025/09/29 08:27:49] Occur Error : 
+ Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 207, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 77, in main_generate
+    arr_mapping = filter_mapping_config(mapp_region,df_loc_sku,item,config_path,project,product)
+  File "c:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 240, in filter_mapping_config
+    mapp_bob_name = get_bob_list(mapp_bob_code,product)[0][0]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/09/29 08:41:09] Occur Error : 
+ Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 207, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 75, in main_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/29 09:23:25] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 1104, in <module>
+    add_bob_to_sql()
+    ~~~~~~~~~~~~~~^^
+  File "c:\01_Job\05_Code\02_PE\02_PE\sqliteProcess.py", line 52, in add_bob_to_sql
+    cursor.execute(insert_sql, (item,))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+[2025/09/29 09:45:54] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 207, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 77, in main_generate
+    arr_mapping = filter_mapping_config(mapp_region,df_loc_sku,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 246, in filter_mapping_config
+    mapp_bob_name = get_bob_list(mapp_bob_code,product)[0][0]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/09/29 09:52:24] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 162, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 62, in main_chk
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/29 09:59:01] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 162, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 82, in main_chk
+    des_value,des_confirm,des_keyname = filter_standard_config(df_keyConfig,item,'Description')
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 306, in filter_standard_config
+    des_value = df_da_loc['key
+[2025/09/29 10:22:13] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 156, in auto_upload
+    config_selenium()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 16, in config_selenium
+    browse = webdriver.Chrome(options=chrome_options)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 69, in __init__
+    super().__init__(command_executor=executor, options=options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 362, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 140.0.7339.208 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff708afe935+77845]
+	GetHandleVerifier [0x0x7ff708afe990+77936]
+	(No symbol) [0x0x7ff7088b9cda]
+	(No symbol) [0x0x7ff7088fe53f]
+	(No symbol) [0x0x7ff7088fd58b]
+	(No symbol) [0x0x7ff7088f6d7d]
+	(No symbol) [0x0x7ff7088f29e5]
+	(No symbol) [0x0x7ff7089462ce]
+	(No symbol) [0x0x7ff708945a60]
+	(No symbol) [0x0x7ff7089386a3]
+	(No symbol) [0x0x7ff708901791]
+	(No symbol) [0x0x7ff708902523]
+	GetHandleVerifier [0x0x7ff708dd684d+3059501]
+	GetHandleVerifier [0x0x7ff708dd0c0d+3035885]
+	GetHandleVerifier [0x0x7ff708df0400+3164896]
+	GetHandleVerifier [0x0x7ff708b18c3e+185118]
+	GetHandleVerifier [0x0x7ff708b2054f+216111]
+	GetHandleVerifier [0x0x7ff708b072e4+113092]
+	GetHandleVerifier [0x0x7ff708b07499+113529]
+	GetHandleVerifier [0x0x7ff708aee298+10616]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 10:27:17] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 156, in auto_upload
+    config_selenium()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 16, in config_selenium
+    browse = webdriver.Chrome(options=chrome_options)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 69, in __init__
+    super().__init__(command_executor=executor, options=options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 362, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 140.0.7339.208 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff708afe935+77845]
+	GetHandleVerifier [0x0x7ff708afe990+77936]
+	(No symbol) [0x0x7ff7088b9cda]
+	(No symbol) [0x0x7ff7088fe53f]
+	(No symbol) [0x0x7ff7088fd58b]
+	(No symbol) [0x0x7ff7088f6d7d]
+	(No symbol) [0x0x7ff7088f29e5]
+	(No symbol) [0x0x7ff7089462ce]
+	(No symbol) [0x0x7ff708945a60]
+	(No symbol) [0x0x7ff7089386a3]
+	(No symbol) [0x0x7ff708901791]
+	(No symbol) [0x0x7ff708902523]
+	GetHandleVerifier [0x0x7ff708dd684d+3059501]
+	GetHandleVerifier [0x0x7ff708dd0c0d+3035885]
+	GetHandleVerifier [0x0x7ff708df0400+3164896]
+	GetHandleVerifier [0x0x7ff708b18c3e+185118]
+	GetHandleVerifier [0x0x7ff708b2054f+216111]
+	GetHandleVerifier [0x0x7ff708b072e4+113092]
+	GetHandleVerifier [0x0x7ff708b07499+113529]
+	GetHandleVerifier [0x0x7ff708aee298+10616]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 10:29:59] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+    ...<2 lines>...
+    ) from e
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001F61B839400>, 'Connection to googlechromelabs.github.io timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='googlechromelabs.github.io', port=443): Max retries exceeded with url: /chrome-for-testing/latest-patch-versions-per-build.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F61B839400>, 'Connection to googlechromelabs.github.io timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\webdriver_manager\core\http.py", line 32, in get
+    resp = requests.get(
+        url=url, verify=self._ssl_verify, stream=True, **kwargs)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='googlechromelabs.github.io', port=443): Max retries exceeded with url: /chrome-for-testing/latest-patch-versions-per-build.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001F61B839400>, 'Connection to googlechromelabs.github.io timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 156, in auto_upload
+    config_selenium()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 16, in config_selenium
+    service = Service(ChromeDriverManager().install())
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\webdriver_manager\chrome.py", line 40, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\webdriver_manager\core\manager.py", line 35, in _get_driver_binary_path
+    binary_path = self._cache_manager.find_driver(driver)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 107, in find_driver
+    driver_version = self.get_cache_key_driver_version(driver)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\webdriver_manager\core\driver_cache.py", line 154, in get_cache_key_driver_version
+    return driver.get_driver_version_to_download()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\webdriver_manager\core\driver.py", line 48, in get_driver_version_to_download
+    return self.get_latest_release_version()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\webdriver_manager\drivers\chrome.py", line 59, in get_latest_release_version
+    response = self._http_client.get(url)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\webdriver_manager\core\http.py", line 35, in get
+    raise exceptions.ConnectionError(f"Could not reach host. Are you offline?")
+requests.exceptions.ConnectionError: Could not reach host. Are you offline?
+
+[2025/09/29 10:32:59] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 67, in _binary_paths
+    output = SeleniumManager().binary_paths(self._to_args())
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 54, in binary_paths
+    return self._run(args)
+           ~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 128, in _run
+    raise WebDriverException(
+        f"Unsuccessful command executed: {command}; code: {completed_proc.returncode}\n{result}\n{stderr}"
+    )
+selenium.common.exceptions.WebDriverException: Message: Unsuccessful command executed: c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser MicrosoftEdge --language-binding python --output json; code: 65
+{'code': 65, 'message': 'error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_140_WINDOWS)', 'driver_path': '', 'browser_path': ''}
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 156, in auto_upload
+    config_selenium()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 29, in config_selenium
+    browse = webdriver.Edge(options=edge_options)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\edge\webdriver.py", line 47, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.EDGE["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    if finder.get_browser_path():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+
+[2025/09/29 10:37:38] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 67, in _binary_paths
+    output = SeleniumManager().binary_paths(self._to_args())
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 54, in binary_paths
+    return self._run(args)
+           ~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\selenium_manager.py", line 128, in _run
+    raise WebDriverException(
+        f"Unsuccessful command executed: {command}; code: {completed_proc.returncode}\n{result}\n{stderr}"
+    )
+selenium.common.exceptions.WebDriverException: Message: Unsuccessful command executed: c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser MicrosoftEdge --language-binding python --output json; code: 65
+{'code': 65, 'message': 'error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_140_WINDOWS)', 'driver_path': '', 'browser_path': ''}
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 156, in auto_upload
+    config_selenium()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 29, in config_selenium
+    browse = webdriver.Edge(options=edge_options)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\edge\webdriver.py", line 47, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.EDGE["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    if finder.get_browser_path():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+
+[2025/09/29 13:15:18] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br)
+    ~~~~~~~~~~~~~~~^^^^
+TypeError: change_language() missing 2 required positional arguments: 'tx_user' and 'tx_pass'
+
+[2025/09/29 13:34:26] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 43, in change_language
+    keyConfig_tab = browse.find_element(By.XPATH,'//*[@id="tab2"]')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tab2"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b657cd7]
+	(No symbol) [0x0x7ff60b657f9c]
+	(No symbol) [0x0x7ff60b6aba87]
+	(No symbol) [0x0x7ff60b6803bf]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 13:37:33] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 43, in change_language
+    keyConfig_tab = browse.find_element(By.XPATH,'//*[@id="tab2"]')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tab2"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b657cd7]
+	(No symbol) [0x0x7ff60b657f9c]
+	(No symbol) [0x0x7ff60b6aba87]
+	(No symbol) [0x0x7ff60b6803bf]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:02:19] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 28, in change_language
+    bt_language = browse.find_element(By.XPATH,'//*[@id="divLang"]/div/span[1]')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="divLang"]/div/span[1]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b657cd7]
+	(No symbol) [0x0x7ff60b657f9c]
+	(No symbol) [0x0x7ff60b6aba87]
+	(No symbol) [0x0x7ff60b6803bf]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:03:25] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 52, in change_language
+    bt_chooseFile = browse.find_element(By.XPATH,'//*[@id="file2"]')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="file2"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b657cd7]
+	(No symbol) [0x0x7ff60b657f9c]
+	(No symbol) [0x0x7ff60b6aba87]
+	(No symbol) [0x0x7ff60b6803bf]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:07:58] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 52, in change_language
+    bt_chooseFile = browse.find_element(By.XPATH,'//*[@id="file2"]')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="file2"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b657cd7]
+	(No symbol) [0x0x7ff60b657f9c]
+	(No symbol) [0x0x7ff60b6aba87]
+	(No symbol) [0x0x7ff60b6803bf]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:14:10] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: change_language() missing 1 required positional argument: 'text_file'
+
+[2025/09/29 14:17:05] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 53, in change_language
+    bt_chooseFile = browse.find_element(By.XPATH,'//*[@id="file2"]')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="file2"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b657cd7]
+	(No symbol) [0x0x7ff60b657f9c]
+	(No symbol) [0x0x7ff60b6aba87]
+	(No symbol) [0x0x7ff60b6803bf]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:23:04] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 53, in change_language
+    bt_chooseFile = browse.find_element(By.ID,'file2')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="file2"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b657cd7]
+	(No symbol) [0x0x7ff60b657f9c]
+	(No symbol) [0x0x7ff60b6aba87]
+	(No symbol) [0x0x7ff60b6803bf]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:25:42] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 48, in change_language
+    keyConfig_tab = browse.find_element(By.XPATH,'//*[@id="tab2"]')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tab2"]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b657cd7]
+	(No symbol) [0x0x7ff60b657f9c]
+	(No symbol) [0x0x7ff60b6aba87]
+	(No symbol) [0x0x7ff60b6803bf]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:27:09] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 56, in change_language
+    bt_chooseFile.send_keys(text_file)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 304, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: File not found : Notification
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b64f604]
+	(No symbol) [0x0x7ff60b68037a]
+	(No symbol) [0x0x7ff60b64a456]
+	(No symbol) [0x0x7ff60b680590]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:29:05] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 57, in change_language
+    bt_chooseFile.click()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b60011c]
+	(No symbol) [0x0x7ff60b64b892]
+	(No symbol) [0x0x7ff60b68037a]
+	(No symbol) [0x0x7ff60b64a456]
+	(No symbol) [0x0x7ff60b680590]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:31:53] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 56, in change_language
+    bt_chooseFile.send_keys(text_file)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 304, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: File not found : Notification
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b64f604]
+	(No symbol) [0x0x7ff60b68037a]
+	(No symbol) [0x0x7ff60b64a456]
+	(No symbol) [0x0x7ff60b680590]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:38:21] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 58, in change_language
+    bt_chooseFile.click()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b60011c]
+	(No symbol) [0x0x7ff60b64b892]
+	(No symbol) [0x0x7ff60b68037a]
+	(No symbol) [0x0x7ff60b64a456]
+	(No symbol) [0x0x7ff60b680590]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+
+
+[2025/09/29 14:41:19] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 57, in change_language
+    bt_chooseFile.send_keys(text_file)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 304, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: File not found : Notification
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b881eb5+80197]
+	GetHandleVerifier [0x0x7ff60b881f10+80288]
+	(No symbol) [0x0x7ff60b6002fa]
+	(No symbol) [0x0x7ff60b64f604]
+	(No symbol) [0x0x7ff60b68037a]
+	(No symbol) [0x0x7ff60b64a456]
+	(No symbol) [0x0x7ff60b680590]
+	(No symbol) [0x0x7ff60b6a87fb]
+	(No symbol) [0x0x7ff60b680153]
+	(No symbol) [0x0x7ff60b648b02]
+	(No symbol) [0x0x7ff60b6498d3]
+	GetHandleVerifier [0x0x7ff60bb3e83d+2949837]
+	GetHandleVerifier [0x0x7ff60bb38c6a+2926330]
+	GetHandleVerifier [0x0x7ff60bb586c7+3055959]
+	GetHandleVerifier [0x0x7ff60b89cfee+191102]
+	GetHandleVerifier [0x0x7ff60b8a50af+224063]
+	GetHandleVerifier [0x0x7ff60b88af64+117236]
+	GetHandleVerifier [0x0x7ff60b88b119+117673]
+	GetHandleVerifier [0x0x7ff60b8710a8+11064]
+	BaseThreadInitThunk [0x0x7fff8e94e8d7+23]
+	RtlUserThreadStart [0x0x7fff8fd5c34c+44]
+

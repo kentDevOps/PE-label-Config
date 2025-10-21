@@ -1,0 +1,61 @@
+
+[2025/10/18 09:29:37] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 373, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku,suffix)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 138, in gen_std
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/18 09:33:00] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 384, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 87, in login_ifuse
+    product_config.click()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60990fca5+79861]
+	GetHandleVerifier [0x0x7ff60990fd00+79952]
+	(No symbol) [0x0x7ff60968c8fc]
+	(No symbol) [0x0x7ff6096e59c3]
+	(No symbol) [0x0x7ff6096d7338]
+	(No symbol) [0x0x7ff60970cada]
+	(No symbol) [0x0x7ff6096d6bc6]
+	(No symbol) [0x0x7ff60970ccf0]
+	(No symbol) [0x0x7ff609734f8b]
+	(No symbol) [0x0x7ff60970c8b3]
+	(No symbol) [0x0x7ff6096d5272]
+	(No symbol) [0x0x7ff6096d6043]
+	GetHandleVerifier [0x0x7ff609bcb9dd+2946349]
+	GetHandleVerifier [0x0x7ff609bc5c5a+2922410]
+	GetHandleVerifier [0x0x7ff609be59e7+3052855]
+	GetHandleVerifier [0x0x7ff60992aa8e+189918]
+	GetHandleVerifier [0x0x7ff609932a2f+222591]
+	GetHandleVerifier [0x0x7ff609918ac4+116244]
+	GetHandleVerifier [0x0x7ff609918c79+116681]
+	GetHandleVerifier [0x0x7ff6098ff058+11176]
+	BaseThreadInitThunk [0x0x7fff4123e8d7+23]
+	RtlUserThreadStart [0x0x7fff431fc34c+44]
+

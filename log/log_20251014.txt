@@ -1,0 +1,351 @@
+
+[2025/10/14 09:23:06] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 573, in pack_labelPrint_create
+    output_path,df = packing_labelPrint_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 255, in packing_labelPrint_generate
+    tempId_bts = get_temp_id(tab_name,'tempId','type','packing','station','ship','region',region,'line','retail')[0][0]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/14 09:49:29] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 308, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 526, in main_one
+    op_key_name = browse.find_element(By.XPATH,'///*[@id="txtElseBasicKeyName"]')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression ///*[@id="txtElseBasicKeyName"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '///*[@id="txtElseBasicKeyName"]' is not a valid XPath expression.
+  (Session info: chrome=141.0.7390.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7df76fca5+79861]
+	GetHandleVerifier [0x0x7ff7df76fd00+79952]
+	(No symbol) [0x0x7ff7df4ecada]
+	(No symbol) [0x0x7ff7df4f461a]
+	(No symbol) [0x0x7ff7df4f770f]
+	(No symbol) [0x0x7ff7df4f77cf]
+	(No symbol) [0x0x7ff7df543d07]
+	(No symbol) [0x0x7ff7df54471c]
+	(No symbol) [0x0x7ff7df598217]
+	(No symbol) [0x0x7ff7df56cb1f]
+	(No symbol) [0x0x7ff7df594f8b]
+	(No symbol) [0x0x7ff7df56c8b3]
+	(No symbol) [0x0x7ff7df535272]
+	(No symbol) [0x0x7ff7df536043]
+	GetHandleVerifier [0x0x7ff7dfa2b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7dfa25c5a+2922410]
+	GetHandleVerifier [0x0x7ff7dfa459e7+3052855]
+	GetHandleVerifier [0x0x7ff7df78aa8e+189918]
+	GetHandleVerifier [0x0x7ff7df792a2f+222591]
+	GetHandleVerifier [0x0x7ff7df778ac4+116244]
+	GetHandleVerifier [0x0x7ff7df778c79+116681]
+	GetHandleVerifier [0x0x7ff7df75f058+11176]
+	BaseThreadInitThunk [0x0x7ffed3a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffed527c34c+44]
+
+
+[2025/10/14 09:53:50] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 308, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 526, in main_one
+    op_key_name = browse.find_element(By.XPATH,'///*[@id="txtElseBasicKeyName"]')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression ///*[@id="txtElseBasicKeyName"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '///*[@id="txtElseBasicKeyName"]' is not a valid XPath expression.
+  (Session info: chrome=141.0.7390.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7df76fca5+79861]
+	GetHandleVerifier [0x0x7ff7df76fd00+79952]
+	(No symbol) [0x0x7ff7df4ecada]
+	(No symbol) [0x0x7ff7df4f461a]
+	(No symbol) [0x0x7ff7df4f770f]
+	(No symbol) [0x0x7ff7df4f77cf]
+	(No symbol) [0x0x7ff7df543d07]
+	(No symbol) [0x0x7ff7df54471c]
+	(No symbol) [0x0x7ff7df598217]
+	(No symbol) [0x0x7ff7df56cb1f]
+	(No symbol) [0x0x7ff7df594f8b]
+	(No symbol) [0x0x7ff7df56c8b3]
+	(No symbol) [0x0x7ff7df535272]
+	(No symbol) [0x0x7ff7df536043]
+	GetHandleVerifier [0x0x7ff7dfa2b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7dfa25c5a+2922410]
+	GetHandleVerifier [0x0x7ff7dfa459e7+3052855]
+	GetHandleVerifier [0x0x7ff7df78aa8e+189918]
+	GetHandleVerifier [0x0x7ff7df792a2f+222591]
+	GetHandleVerifier [0x0x7ff7df778ac4+116244]
+	GetHandleVerifier [0x0x7ff7df778c79+116681]
+	GetHandleVerifier [0x0x7ff7df75f058+11176]
+	BaseThreadInitThunk [0x0x7ffed3a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffed527c34c+44]
+
+
+[2025/10/14 10:03:22] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 308, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 879, in main_one
+    op_key_type.click()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7df76fca5+79861]
+	GetHandleVerifier [0x0x7ff7df76fd00+79952]
+	(No symbol) [0x0x7ff7df4ec8fc]
+	(No symbol) [0x0x7ff7df5459c3]
+	(No symbol) [0x0x7ff7df537338]
+	(No symbol) [0x0x7ff7df56cada]
+	(No symbol) [0x0x7ff7df536bc6]
+	(No symbol) [0x0x7ff7df56ccf0]
+	(No symbol) [0x0x7ff7df594f8b]
+	(No symbol) [0x0x7ff7df56c8b3]
+	(No symbol) [0x0x7ff7df535272]
+	(No symbol) [0x0x7ff7df536043]
+	GetHandleVerifier [0x0x7ff7dfa2b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7dfa25c5a+2922410]
+	GetHandleVerifier [0x0x7ff7dfa459e7+3052855]
+	GetHandleVerifier [0x0x7ff7df78aa8e+189918]
+	GetHandleVerifier [0x0x7ff7df792a2f+222591]
+	GetHandleVerifier [0x0x7ff7df778ac4+116244]
+	GetHandleVerifier [0x0x7ff7df778c79+116681]
+	GetHandleVerifier [0x0x7ff7df75f058+11176]
+	BaseThreadInitThunk [0x0x7ffed3a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffed527c34c+44]
+
+
+[2025/10/14 10:07:26] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 308, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 933, in main_one
+    bt_save.click()
+    ~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7df76fca5+79861]
+	GetHandleVerifier [0x0x7ff7df76fd00+79952]
+	(No symbol) [0x0x7ff7df4ec8fc]
+	(No symbol) [0x0x7ff7df5459c3]
+	(No symbol) [0x0x7ff7df537338]
+	(No symbol) [0x0x7ff7df56cada]
+	(No symbol) [0x0x7ff7df536bc6]
+	(No symbol) [0x0x7ff7df56ccf0]
+	(No symbol) [0x0x7ff7df594f8b]
+	(No symbol) [0x0x7ff7df56c8b3]
+	(No symbol) [0x0x7ff7df535272]
+	(No symbol) [0x0x7ff7df536043]
+	GetHandleVerifier [0x0x7ff7dfa2b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7dfa25c5a+2922410]
+	GetHandleVerifier [0x0x7ff7dfa459e7+3052855]
+	GetHandleVerifier [0x0x7ff7df78aa8e+189918]
+	GetHandleVerifier [0x0x7ff7df792a2f+222591]
+	GetHandleVerifier [0x0x7ff7df778ac4+116244]
+	GetHandleVerifier [0x0x7ff7df778c79+116681]
+	GetHandleVerifier [0x0x7ff7df75f058+11176]
+	BaseThreadInitThunk [0x0x7ffed3a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffed527c34c+44]
+
+
+[2025/10/14 10:09:00] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 308, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 933, in main_one
+    bt_save.click()
+    ~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7df76fca5+79861]
+	GetHandleVerifier [0x0x7ff7df76fd00+79952]
+	(No symbol) [0x0x7ff7df4ec8fc]
+	(No symbol) [0x0x7ff7df5459c3]
+	(No symbol) [0x0x7ff7df537338]
+	(No symbol) [0x0x7ff7df56cada]
+	(No symbol) [0x0x7ff7df536bc6]
+	(No symbol) [0x0x7ff7df56ccf0]
+	(No symbol) [0x0x7ff7df594f8b]
+	(No symbol) [0x0x7ff7df56c8b3]
+	(No symbol) [0x0x7ff7df535272]
+	(No symbol) [0x0x7ff7df536043]
+	GetHandleVerifier [0x0x7ff7dfa2b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7dfa25c5a+2922410]
+	GetHandleVerifier [0x0x7ff7dfa459e7+3052855]
+	GetHandleVerifier [0x0x7ff7df78aa8e+189918]
+	GetHandleVerifier [0x0x7ff7df792a2f+222591]
+	GetHandleVerifier [0x0x7ff7df778ac4+116244]
+	GetHandleVerifier [0x0x7ff7df778c79+116681]
+	GetHandleVerifier [0x0x7ff7df75f058+11176]
+	BaseThreadInitThunk [0x0x7ffed3a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffed527c34c+44]
+
+
+[2025/10/14 13:52:14] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 308, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 879, in main_one
+    op_key_type.click()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7df76fca5+79861]
+	GetHandleVerifier [0x0x7ff7df76fd00+79952]
+	(No symbol) [0x0x7ff7df4ec8fc]
+	(No symbol) [0x0x7ff7df5459c3]
+	(No symbol) [0x0x7ff7df537338]
+	(No symbol) [0x0x7ff7df56cada]
+	(No symbol) [0x0x7ff7df536bc6]
+	(No symbol) [0x0x7ff7df56ccf0]
+	(No symbol) [0x0x7ff7df594f8b]
+	(No symbol) [0x0x7ff7df56c8b3]
+	(No symbol) [0x0x7ff7df535272]
+	(No symbol) [0x0x7ff7df536043]
+	GetHandleVerifier [0x0x7ff7dfa2b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7dfa25c5a+2922410]
+	GetHandleVerifier [0x0x7ff7dfa459e7+3052855]
+	GetHandleVerifier [0x0x7ff7df78aa8e+189918]
+	GetHandleVerifier [0x0x7ff7df792a2f+222591]
+	GetHandleVerifier [0x0x7ff7df778ac4+116244]
+	GetHandleVerifier [0x0x7ff7df778c79+116681]
+	GetHandleVerifier [0x0x7ff7df75f058+11176]
+	BaseThreadInitThunk [0x0x7ffed3a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffed527c34c+44]
+
+
+[2025/10/14 14:12:40] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 308, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 934, in main_one
+    bt_save.click()
+    ~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7df76fca5+79861]
+	GetHandleVerifier [0x0x7ff7df76fd00+79952]
+	(No symbol) [0x0x7ff7df4ec8fc]
+	(No symbol) [0x0x7ff7df5459c3]
+	(No symbol) [0x0x7ff7df537338]
+	(No symbol) [0x0x7ff7df56cada]
+	(No symbol) [0x0x7ff7df536bc6]
+	(No symbol) [0x0x7ff7df56ccf0]
+	(No symbol) [0x0x7ff7df594f8b]
+	(No symbol) [0x0x7ff7df56c8b3]
+	(No symbol) [0x0x7ff7df535272]
+	(No symbol) [0x0x7ff7df536043]
+	GetHandleVerifier [0x0x7ff7dfa2b9dd+2946349]
+	GetHandleVerifier [0x0x7ff7dfa25c5a+2922410]
+	GetHandleVerifier [0x0x7ff7dfa459e7+3052855]
+	GetHandleVerifier [0x0x7ff7df78aa8e+189918]
+	GetHandleVerifier [0x0x7ff7df792a2f+222591]
+	GetHandleVerifier [0x0x7ff7df778ac4+116244]
+	GetHandleVerifier [0x0x7ff7df778c79+116681]
+	GetHandleVerifier [0x0x7ff7df75f058+11176]
+	BaseThreadInitThunk [0x0x7ffed3a9e8d7+23]
+	RtlUserThreadStart [0x0x7ffed527c34c+44]
+
+
+[2025/10/14 19:40:15] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 320, in maintain_load_keyConfig
+    data_load_df = pd.DataFrame(dict_data_load)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 851, in __init__
+    arrays, columns, index = nested_data_to_arrays(
+                             ~~~~~~~~~~~~~~~~~~~~~^
+        # error: Argument 3 to "nested_data_to_arrays" has incompatible
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        dtype,
+        ^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\construction.py", line 520, in nested_data_to_arrays
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+                      ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\construction.py", line 837, in to_arrays
+    arr, columns = _list_of_dict_to_arrays(data, columns)
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\construction.py", line 917, in _list_of_dict_to_arrays
+    pre_cols = lib.fast_unique_multiple_list_gen(gen, sort=sort)
+  File "pandas/_libs/lib.pyx", line 367, in pandas._libs.lib.fast_unique_multiple_list_gen
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\construction.py", line 915, in <genexpr>
+    gen = (list(x.keys()) for x in data)
+                ^^^^^^
+AttributeError: 'NoneType' object has no attribute 'keys'

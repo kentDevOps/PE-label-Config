@@ -1,0 +1,98 @@
+
+[2025/10/06 10:25:41] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    login_ifuse(user,passW,current_project,list_sku,region)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 167, in login_ifuse
+    price_list = gen_dict_standard(region,list_data,item,'price')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 674, in gen_dict_standard
+    item_mapp = list_infor[5]
+                ~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/06 10:38:39] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    login_ifuse(user,passW,current_project,list_sku,dict_region)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 175, in login_ifuse
+    main_df = pd.concat([main_df , new_rows_df], ignore_index=True)
+                         ^^^^^^^
+UnboundLocalError: cannot access local variable 'main_df' where it is not associated with a value
+
+[2025/10/06 11:26:06] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 285, in realtime_chk_keyConfig
+    out_file = compare_ifuse_std(standard_df,ifuse_df)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 46, in compare_ifuse_std
+    compare_df = compare_df[['SKU', 'Type', 'Value_std', 'Value_if', 'Khác nhau?']]
+                 ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 6212, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 6264, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Khác nhau?'] not in index"
+
+[2025/10/06 13:37:00] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 148, in gen_std
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 475, in filter_mapping_config_BZ
+    mapp_bob_fl = get_bob_list(mapp_bob_code,product)[0][0]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/06 13:45:41] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 149, in gen_std
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 475, in filter_mapping_config_BZ
+    mapp_bob_fl = get_bob_list(mapp_bob_code,product)[0][0]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/06 14:25:05] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 149, in gen_std
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 475, in filter_mapping_config_BZ
+    mapp_bob_fl = get_bob_list(mapp_bob_code,product)[0][0]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/06 14:33:42] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 149, in gen_std
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 474, in filter_mapping_config_BZ
+    mapp_bob_code = mapp_bob_code + '_rev' + rev_code
+                                             ^^^^^^^^
+UnboundLocalError: cannot access local variable 'rev_code' where it is not associated with a value
+
+[2025/10/06 16:03:02] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 157, in login_ifuse
+    Des_list = gen_dict_standard(dict_region[item],list_data,item,'Des')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 663, in gen_dict_standard
+    item_mapp = list_infor[0]
+                ~~~~~~~~~~^^^
+IndexError: list index out of range

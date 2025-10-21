@@ -1,0 +1,16 @@
+
+[2025/08/13 13:34:56] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : __init__ 
+ -Line Name: 52 
+ -Error Content: Expected signal or callable, got "str"
+[2025/08/13 13:36:48] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : __init__ 
+ -Line Name: 53 
+ -Error Content: Expected signal or callable, got "NoneType"
+[2025/08/13 13:37:49] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : __init__ 
+ -Line Name: 53 
+ -Error Content: Expected signal or callable, got "NoneType"

@@ -1,0 +1,361 @@
+
+[2025/10/04 09:33:36] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if len(item)>6 and item != 'nan':
+       ~~~^^^^^^
+TypeError: object of type 'float' has no len()
+
+[2025/10/04 09:34:58] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if len(item)>6 and item != 'nan':
+       ~~~^^^^^^
+TypeError: object of type 'float' has no len()
+
+[2025/10/04 09:35:08] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if len(item)>6 and item != 'nan':
+       ~~~^^^^^^
+TypeError: object of type 'float' has no len()
+
+[2025/10/04 09:47:22] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if len(item)>6 and item != 'nan':
+       ~~~^^^^^^
+TypeError: object of type 'float' has no len()
+
+[2025/10/04 09:48:30] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1210, in setup_sku_search
+    rs_list = [item for item in sku_list if txt in item.lower() and len(txt)>6]
+                                                   ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/04 09:55:44] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 849, in realtime_combo_box_text_changed
+    raise FileNotFoundError(f"File Standard '{os.path.basename(mapp_path)}' Is Not Exists!!!")
+FileNotFoundError: File Standard '' Is Not Exists!!!
+
+[2025/10/04 09:55:48] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 849, in realtime_combo_box_text_changed
+    raise FileNotFoundError(f"File Standard '{os.path.basename(mapp_path)}' Is Not Exists!!!")
+FileNotFoundError: File Standard '' Is Not Exists!!!
+
+[2025/10/04 09:56:02] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 849, in realtime_combo_box_text_changed
+    raise FileNotFoundError(f"File Standard '{os.path.basename(mapp_path)}' Is Not Exists!!!")
+FileNotFoundError: File Standard '' Is Not Exists!!!
+
+[2025/10/04 09:56:19] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 896, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/04 09:56:27] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 896, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/04 09:56:32] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 896, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/04 09:56:39] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 896, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/04 09:56:50] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 896, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/04 09:56:57] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 896, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/04 09:57:02] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 896, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/04 09:59:14] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 896, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/04 09:59:29] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 896, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/04 10:01:25] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 849, in realtime_combo_box_text_changed
+    raise FileNotFoundError(f"File Standard '{os.path.basename(mapp_path)}' Is Not Exists!!!")
+FileNotFoundError: File Standard '' Is Not Exists!!!
+
+[2025/10/04 10:02:36] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 851, in realtime_combo_box_text_changed
+    raise FileNotFoundError(f"File Standard '{os.path.basename(mapp_path)}' Is Not Exists!!!")
+FileNotFoundError: File Standard '' Is Not Exists!!!
+
+[2025/10/04 10:02:42] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 851, in realtime_combo_box_text_changed
+    raise FileNotFoundError(f"File Standard '{os.path.basename(mapp_path)}' Is Not Exists!!!")
+FileNotFoundError: File Standard '' Is Not Exists!!!
+
+[2025/10/04 11:24:42] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    gen_std(current_project,current_product,list_sku)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 74, in gen_std
+    sap_list = gen_dict_standard(mapp_region,arr_mapping,item,'sap')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 683, in gen_dict_standard
+    result_list['Value'] = item_mapp
+                           ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'item_mapp' where it is not associated with a value
+
+[2025/10/04 11:28:07] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    gen_std(current_project,current_product,list_sku)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 74, in gen_std
+    bob_list = gen_dict_standard(mapp_region,arr_mapping,item,'Bob')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 683, in gen_dict_standard
+    result_list['Value'] = item_mapp
+                           ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'item_mapp' where it is not associated with a value
+
+[2025/10/04 13:50:12] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    login_ifuse(user,passW)
+    ~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: login_ifuse() missing 1 required positional argument: 'project'
+
+[2025/10/04 14:01:28] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    login_ifuse(user,passW,current_project)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 74, in login_ifuse
+    bt_tim.click()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a id="btnSearch" class="btn blue">...</a> is not clickable at point (298, 345). Other element would receive the click: <div class="select2-result-label">...</div>
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7873f1eb5+80197]
+	GetHandleVerifier [0x0x7ff7873f1f10+80288]
+	(No symbol) [0x0x7ff7871702fa]
+	(No symbol) [0x0x7ff7871cfe69]
+	(No symbol) [0x0x7ff7871cd7ee]
+	(No symbol) [0x0x7ff7871ca731]
+	(No symbol) [0x0x7ff7871c9620]
+	(No symbol) [0x0x7ff7871babc8]
+	(No symbol) [0x0x7ff7871f037a]
+	(No symbol) [0x0x7ff7871ba456]
+	(No symbol) [0x0x7ff7871f0590]
+	(No symbol) [0x0x7ff7872187fb]
+	(No symbol) [0x0x7ff7871f0153]
+	(No symbol) [0x0x7ff7871b8b02]
+	(No symbol) [0x0x7ff7871b98d3]
+	GetHandleVerifier [0x0x7ff7876ae83d+2949837]
+	GetHandleVerifier [0x0x7ff7876a8c6a+2926330]
+	GetHandleVerifier [0x0x7ff7876c86c7+3055959]
+	GetHandleVerifier [0x0x7ff78740cfee+191102]
+	GetHandleVerifier [0x0x7ff7874150af+224063]
+	GetHandleVerifier [0x0x7ff7873faf64+117236]
+	GetHandleVerifier [0x0x7ff7873fb119+117673]
+	GetHandleVerifier [0x0x7ff7873e10a8+11064]
+	BaseThreadInitThunk [0x0x7ffdc999e8d7+23]
+	RtlUserThreadStart [0x0x7ffdcb15c34c+44]
+
+
+[2025/10/04 14:20:51] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df = gen_std(current_project,current_product,list_sku)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 52, in gen_std
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/04 14:22:58] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    login_ifuse(user,passW,current_project,list_sku)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 81, in login_ifuse
+    td_value = row.find_element(By.XPATH, './td[2]').text.strip()
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 602, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"./td[2]"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7873f1eb5+80197]
+	GetHandleVerifier [0x0x7ff7873f1f10+80288]
+	(No symbol) [0x0x7ff7871702fa]
+	(No symbol) [0x0x7ff7871c7cd7]
+	(No symbol) [0x0x7ff7871c7f9c]
+	(No symbol) [0x0x7ff7871ba59c]
+	(No symbol) [0x0x7ff7871f03bf]
+	(No symbol) [0x0x7ff7871ba456]
+	(No symbol) [0x0x7ff7871f0590]
+	(No symbol) [0x0x7ff7872187fb]
+	(No symbol) [0x0x7ff7871f0153]
+	(No symbol) [0x0x7ff7871b8b02]
+	(No symbol) [0x0x7ff7871b98d3]
+	GetHandleVerifier [0x0x7ff7876ae83d+2949837]
+	GetHandleVerifier [0x0x7ff7876a8c6a+2926330]
+	GetHandleVerifier [0x0x7ff7876c86c7+3055959]
+	GetHandleVerifier [0x0x7ff78740cfee+191102]
+	GetHandleVerifier [0x0x7ff7874150af+224063]
+	GetHandleVerifier [0x0x7ff7873faf64+117236]
+	GetHandleVerifier [0x0x7ff7873fb119+117673]
+	GetHandleVerifier [0x0x7ff7873e10a8+11064]
+	BaseThreadInitThunk [0x0x7ffdc999e8d7+23]
+	RtlUserThreadStart [0x0x7ffdcb15c34c+44]
+
+
+[2025/10/04 14:36:48] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    login_ifuse(user,passW,current_project,list_sku)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 79, in login_ifuse
+    for row in rows:
+               ^^^^
+TypeError: 'WebElement' object is not iterable
+
+[2025/10/04 15:02:02] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 530, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 381, in main_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/04 16:42:49] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    login_ifuse(user,passW,current_project,list_sku)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 79, in login_ifuse
+    for row in rows:
+               ^^^^
+TypeError: 'WebElement' object is not iterable
+
+[2025/10/04 17:45:50] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    login_ifuse(user,passW,current_project,list_sku)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 92, in login_ifuse
+    task_key.click()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href="#tab_1_2" data-toggle="tab" id="tab2">...</a> is not clickable at point (745, 191). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.05; cursor: wait; position: absolute;"></div>
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7873f1eb5+80197]
+	GetHandleVerifier [0x0x7ff7873f1f10+80288]
+	(No symbol) [0x0x7ff7871702fa]
+	(No symbol) [0x0x7ff7871cfe69]
+	(No symbol) [0x0x7ff7871cd7ee]
+	(No symbol) [0x0x7ff7871ca731]
+	(No symbol) [0x0x7ff7871c9620]
+	(No symbol) [0x0x7ff7871baf65]
+	(No symbol) [0x0x7ff7871f037a]
+	(No symbol) [0x0x7ff7871ba456]
+	(No symbol) [0x0x7ff7871f0590]
+	(No symbol) [0x0x7ff7872187fb]
+	(No symbol) [0x0x7ff7871f0153]
+	(No symbol) [0x0x7ff7871b8b02]
+	(No symbol) [0x0x7ff7871b98d3]
+	GetHandleVerifier [0x0x7ff7876ae83d+2949837]
+	GetHandleVerifier [0x0x7ff7876a8c6a+2926330]
+	GetHandleVerifier [0x0x7ff7876c86c7+3055959]
+	GetHandleVerifier [0x0x7ff78740cfee+191102]
+	GetHandleVerifier [0x0x7ff7874150af+224063]
+	GetHandleVerifier [0x0x7ff7873faf64+117236]
+	GetHandleVerifier [0x0x7ff7873fb119+117673]
+	GetHandleVerifier [0x0x7ff7873e10a8+11064]
+	BaseThreadInitThunk [0x0x7ffdc999e8d7+23]
+	RtlUserThreadStart [0x0x7ffdcb15c34c+44]
+

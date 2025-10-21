@@ -1,0 +1,200 @@
+
+[2025/10/02 09:44:46] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 124, in __init__
+    self.execute()
+    ~~~~~~~~~~~~^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 202, in execute
+    self.threadpool.start(wk)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'threadpool'
+
+[2025/10/02 10:00:15] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 63, in run
+    self.signal.progress.emit(progress_pc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+RuntimeError: Signal source has been deleted
+
+[2025/10/02 14:05:18] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 475, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 383, in main_generate
+    arr_mapping = filter_mapping_config(mapp_region,df_loc_sku,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 566, in filter_mapping_config
+    mapp_bob_name = get_bob_list(mapp_bob_code,product)[0][0]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/02 14:12:23] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 475, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 396, in main_generate
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 464, in filter_mapping_config_BZ
+    if len(df_loc_mapping.iloc[0,45].split('\n')) == 2:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'split'
+
+[2025/10/02 14:12:50] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 475, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 396, in main_generate
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 475, in filter_mapping_config_BZ
+    mapp_bob_fl = get_bob_list(mapp_bob_code,product)[0][0]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/02 14:13:11] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 475, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 396, in main_generate
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 475, in filter_mapping_config_BZ
+    mapp_bob_fl = get_bob_list(mapp_bob_code,product)[0][0]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/02 14:13:31] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 475, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 396, in main_generate
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 475, in filter_mapping_config_BZ
+    mapp_bob_fl = get_bob_list(mapp_bob_code,product)[0][0]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/02 14:13:44] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 475, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 396, in main_generate
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 475, in filter_mapping_config_BZ
+    mapp_bob_fl = get_bob_list(mapp_bob_code,product)[0][0]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/02 14:16:37] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 475, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 396, in main_generate
+    arr_mapping = filter_mapping_config_BZ(mapp_region,df_loc_mapping,item,config_path,mapp_des,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 475, in filter_mapping_config_BZ
+    mapp_bob_fl = get_bob_list(mapp_bob_code,product)[0][0]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/02 14:33:22] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 475, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 390, in main_generate
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 536, in filter_mapping_config_FL
+    mapp_bob_name = get_bob_list(mapp_bob_code,product)[0][0]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/02 14:34:04] Occur Error : 
+ Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 475, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 390, in main_generate
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 536, in filter_mapping_config_FL
+    mapp_bob_name = get_bob_list(mapp_bob_code,product)[0][0]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/02 14:41:10] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 771, in view_combo_box_text_changed
+    item = QStandardItem(item_text)
+OverflowError
+
+[2025/10/02 14:41:24] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 771, in view_combo_box_text_changed
+    item = QStandardItem(item_text)
+OverflowError
+
+[2025/10/02 14:46:18] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 386, in pack_labelPrint_create
+    output_path,df = packing_labelPrint_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 235, in packing_labelPrint_generate
+    mapp_region = df_loc_mapping.iloc[0,7].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/02 14:46:53] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 860, in view_region_changed
+    item = QStandardItem(item_text)
+OverflowError
+
+[2025/10/02 14:47:00] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 860, in view_region_changed
+    item = QStandardItem(item_text)
+OverflowError
+
+[2025/10/02 14:47:23] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 860, in view_region_changed
+    item = QStandardItem(item_text)
+OverflowError
+
+[2025/10/02 14:47:32] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 386, in pack_labelPrint_create
+    output_path,df = packing_labelPrint_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 235, in packing_labelPrint_generate
+    mapp_region = df_loc_mapping.iloc[0,7].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/02 14:48:37] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 860, in view_region_changed
+    item = QStandardItem(item_text)
+OverflowError
+
+[2025/10/02 16:15:45] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 915, in view_listsku_clicked
+    BOB_code =  BOB_code.split('\n')[1][:-2]
+                ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range

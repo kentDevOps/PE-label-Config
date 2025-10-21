@@ -1,0 +1,29 @@
+
+[2025/08/08 21:13:40] error file c:\01_Job\05_Code\02_PE\02_PE\log.py , Func 10 , Line testLog , loi division by zero
+[2025/08/08 21:13:41]  loi division by zero
+[2025/08/08 21:15:35] error file c:\01_Job\05_Code\02_PE\02_PE\main.py , Func 41 , Line __init__ , loi 'MainWindow' object has no attribute 'cb_product_changed1'
+[2025/08/08 21:18:46] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\log.py 
+ -Function : 9 
+ -Line Name: testLog 
+ -Error Content: division by zero
+[2025/08/08 23:17:30] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\common.py 
+ -Function : 13 
+ -Line Name: check_mandatory_folder_exists 
+ -Error Content: Folder c:\01_Job\05_Code\02_PE\02_PE\img is not Exists!!!
+[2025/08/08 23:18:56] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\common.py 
+ -Function : check_mandatory_folder_exists 
+ -Line Name: 13 
+ -Error Content: Folder c:\01_Job\05_Code\02_PE\02_PE\img is not Exists!!!
+[2025/08/08 23:19:48] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\sqlite.py 
+ -Function : create_sql_connect 
+ -Line Name: 6 
+ -Error Content: unable to open database file
+[2025/08/08 23:24:53] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\sqlite.py 
+ -Function : create_sql_connect 
+ -Line Name: 6 
+ -Error Content: unable to open database file

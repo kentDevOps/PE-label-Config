@@ -1,0 +1,487 @@
+
+[2025/10/07 09:03:12] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 157, in login_ifuse
+    Des_list = gen_dict_standard(dict_region[item],list_data,item,'Des')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 663, in gen_dict_standard
+    item_mapp = list_infor[0]
+                ~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/07 09:12:46] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 157, in login_ifuse
+    Des_list = gen_dict_standard(dict_region[item],list_data,item,'Des')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 663, in gen_dict_standard
+    item_mapp = list_infor[0]
+                ~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/07 09:21:04] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 51, in login_ifuse
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/ul/li[5]/a/i"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff61e2e1eb5+80197]
+	GetHandleVerifier [0x0x7ff61e2e1f10+80288]
+	(No symbol) [0x0x7ff61e0602fa]
+	(No symbol) [0x0x7ff61e0b7cd7]
+	(No symbol) [0x0x7ff61e0b7f9c]
+	(No symbol) [0x0x7ff61e10ba87]
+	(No symbol) [0x0x7ff61e0e03bf]
+	(No symbol) [0x0x7ff61e1087fb]
+	(No symbol) [0x0x7ff61e0e0153]
+	(No symbol) [0x0x7ff61e0a8b02]
+	(No symbol) [0x0x7ff61e0a98d3]
+	GetHandleVerifier [0x0x7ff61e59e83d+2949837]
+	GetHandleVerifier [0x0x7ff61e598c6a+2926330]
+	GetHandleVerifier [0x0x7ff61e5b86c7+3055959]
+	GetHandleVerifier [0x0x7ff61e2fcfee+191102]
+	GetHandleVerifier [0x0x7ff61e3050af+224063]
+	GetHandleVerifier [0x0x7ff61e2eaf64+117236]
+	GetHandleVerifier [0x0x7ff61e2eb119+117673]
+	GetHandleVerifier [0x0x7ff61e2d10a8+11064]
+	BaseThreadInitThunk [0x0x7ffbde8fe8d7+23]
+	RtlUserThreadStart [0x0x7ffbdee3c34c+44]
+
+
+[2025/10/07 09:34:12] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 532, in filter_mapping_config_FL
+    if len(df_loc_mapping.iloc[0,55].split('\n')) == 2:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'split'
+
+[2025/10/07 09:35:24] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 532, in filter_mapping_config_FL
+    if len(df_loc_mapping.iloc[0,55].split('\n')) == 2:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'split'
+
+[2025/10/07 09:40:24] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 531, in filter_mapping_config_FL
+    aaa = df_loc_mapping.iloc[0,55].fillna('')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'fillna'
+
+[2025/10/07 09:41:03] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 531, in filter_mapping_config_FL
+    aaa = df_loc_mapping.iloc[0,55].fillna('')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'fillna'
+
+[2025/10/07 09:45:23] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 546, in filter_mapping_config_FL
+    mapp_bob_code,rev_code = bob_convert(mapp_bob_code,mapp_bob_rev)
+                                                       ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'mapp_bob_rev' where it is not associated with a value
+
+[2025/10/07 09:57:26] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 160, in login_ifuse
+    rap_list = gen_dict_standard(dict_region[item],list_data,item,'Rap')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 721, in gen_dict_standard
+    item_mapp = list_infor[3]
+                ~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/07 10:06:04] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 160, in login_ifuse
+    rap_list = gen_dict_standard(dict_region[item],list_data,item,'Rap')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 721, in gen_dict_standard
+    item_mapp = list_infor[3]
+                ~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/07 10:32:40] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 94, in login_ifuse
+    td_value = tds[1].text.strip()   # ch
+[2025/10/07 10:57:09] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 518, in filter_mapping_config_FL
+    mapp_des = df_loc_mapping.iloc[0,28].strip()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'strip'
+
+[2025/10/07 10:58:40] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 518, in filter_mapping_config_FL
+    mapp_des = df_loc_mapping.iloc[0,28].strip()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'strip'
+
+[2025/10/07 11:04:27] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 573, in filter_mapping_config_FL
+    arr_std.append(df_loc_mapping.iloc[0,67][:-2]) #IN MRP\nArtwork GPN & Rev\n
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+TypeError: 'float' object is not subscriptable
+
+[2025/10/07 11:06:01] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 573, in filter_mapping_config_FL
+    arr_std.append(df_loc_mapping.iloc[0,67][:-2]) #IN MRP\nArtwork GPN & Rev\n
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+TypeError: 'float' object is not subscriptable
+
+[2025/10/07 11:06:20] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 555, in filter_mapping_config_FL
+    mapp_bob_name = get_bob_list(mapp_bob_code,product)[0][0]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/07 11:10:26] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 555, in filter_mapping_config_FL
+    mapp_bob_name = get_bob_list(mapp_bob_code,product)[0][0]
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/07 11:16:59] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 51, in login_ifuse
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/ul/li[5]/a/i"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff61e2e1eb5+80197]
+	GetHandleVerifier [0x0x7ff61e2e1f10+80288]
+	(No symbol) [0x0x7ff61e0602fa]
+	(No symbol) [0x0x7ff61e0b7cd7]
+	(No symbol) [0x0x7ff61e0b7f9c]
+	(No symbol) [0x0x7ff61e10ba87]
+	(No symbol) [0x0x7ff61e0e03bf]
+	(No symbol) [0x0x7ff61e1087fb]
+	(No symbol) [0x0x7ff61e0e0153]
+	(No symbol) [0x0x7ff61e0a8b02]
+	(No symbol) [0x0x7ff61e0a98d3]
+	GetHandleVerifier [0x0x7ff61e59e83d+2949837]
+	GetHandleVerifier [0x0x7ff61e598c6a+2926330]
+	GetHandleVerifier [0x0x7ff61e5b86c7+3055959]
+	GetHandleVerifier [0x0x7ff61e2fcfee+191102]
+	GetHandleVerifier [0x0x7ff61e3050af+224063]
+	GetHandleVerifier [0x0x7ff61e2eaf64+117236]
+	GetHandleVerifier [0x0x7ff61e2eb119+117673]
+	GetHandleVerifier [0x0x7ff61e2d10a8+11064]
+	BaseThreadInitThunk [0x0x7ffbde8fe8d7+23]
+	RtlUserThreadStart [0x0x7ffbdee3c34c+44]
+
+
+[2025/10/07 11:21:09] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 582, in filter_mapping_config_FL
+    arr_std.append(df_loc_mapping.iloc[0,67][:-2]) #IN MRP\nArtwork GPN & Rev\n
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+TypeError: 'float' object is not subscriptable
+
+[2025/10/07 11:24:10] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 582, in filter_mapping_config_FL
+    arr_std.append(df_loc_mapping.iloc[0,67][:-2]) #IN MRP\nArtwork GPN & Rev\n
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+TypeError: 'float' object is not subscriptable
+
+[2025/10/07 13:06:19] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 582, in filter_mapping_config_FL
+    arr_std.append(df_loc_mapping.iloc[0,67][:-2]) #IN MRP\nArtwork GPN & Rev\n
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+TypeError: 'float' object is not subscriptable
+
+[2025/10/07 13:10:15] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 252, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 143, in gen_std
+    arr_mapping = filter_mapping_config_FL(mapp_region,df_loc_mapping,item,config_path,project,product)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 582, in filter_mapping_config_FL
+    arr_std.append(df_loc_mapping.iloc[0,67][:-2]) #IN MRP\nArtwork GPN & Rev\n
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+TypeError: 'float' object is not subscriptable
+
+[2025/10/07 13:33:12] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 158, in login_ifuse
+    brand_list = gen_dict_standard(dict_region[item],list_data,item,'Brand')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 730, in gen_dict_standard
+    item_mapp = list_infor[1]
+                ~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/07 13:54:52] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 158, in login_ifuse
+    brand_list = gen_dict_standard(dict_region[item],list_data,item,'Brand')
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 730, in gen_dict_standard
+    item_mapp = list_infor[1]
+                ~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/07 14:17:30] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 184, in login_ifuse
+    list_frame = [Des_list,brand_list,upc_list,rap_list,bob_list]
+                           ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'brand_list' where it is not associated with a value
+
+[2025/10/07 15:43:26] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 101, in login_ifuse
+    task_key.click()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href="#tab_1_2" data-toggle="tab" id="tab2">...</a> is not clickable at point (745, 178). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.05; cursor: wait; position: absolute;"></div>
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff61e2e1eb5+80197]
+	GetHandleVerifier [0x0x7ff61e2e1f10+80288]
+	(No symbol) [0x0x7ff61e0602fa]
+	(No symbol) [0x0x7ff61e0bfe69]
+	(No symbol) [0x0x7ff61e0bd7ee]
+	(No symbol) [0x0x7ff61e0ba731]
+	(No symbol) [0x0x7ff61e0b9620]
+	(No symbol) [0x0x7ff61e0aabc8]
+	(No symbol) [0x0x7ff61e0e037a]
+	(No symbol) [0x0x7ff61e0aa456]
+	(No symbol) [0x0x7ff61e0e0590]
+	(No symbol) [0x0x7ff61e1087fb]
+	(No symbol) [0x0x7ff61e0e0153]
+	(No symbol) [0x0x7ff61e0a8b02]
+	(No symbol) [0x0x7ff61e0a98d3]
+	GetHandleVerifier [0x0x7ff61e59e83d+2949837]
+	GetHandleVerifier [0x0x7ff61e598c6a+2926330]
+	GetHandleVerifier [0x0x7ff61e5b86c7+3055959]
+	GetHandleVerifier [0x0x7ff61e2fcfee+191102]
+	GetHandleVerifier [0x0x7ff61e3050af+224063]
+	GetHandleVerifier [0x0x7ff61e2eaf64+117236]
+	GetHandleVerifier [0x0x7ff61e2eb119+117673]
+	GetHandleVerifier [0x0x7ff61e2d10a8+11064]
+	BaseThreadInitThunk [0x0x7ffbde8fe8d7+23]
+	RtlUserThreadStart [0x0x7ffbdee3c34c+44]
+
+
+[2025/10/07 16:14:35] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 101, in login_ifuse
+    task_key.click()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href="#tab_1_2" data-toggle="tab" id="tab2">...</a> is not clickable at point (745, 178). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.05; cursor: wait; position: absolute;"></div>
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff61e2e1eb5+80197]
+	GetHandleVerifier [0x0x7ff61e2e1f10+80288]
+	(No symbol) [0x0x7ff61e0602fa]
+	(No symbol) [0x0x7ff61e0bfe69]
+	(No symbol) [0x0x7ff61e0bd7ee]
+	(No symbol) [0x0x7ff61e0ba731]
+	(No symbol) [0x0x7ff61e0b9620]
+	(No symbol) [0x0x7ff61e0aabc8]
+	(No symbol) [0x0x7ff61e0e037a]
+	(No symbol) [0x0x7ff61e0aa456]
+	(No symbol) [0x0x7ff61e0e0590]
+	(No symbol) [0x0x7ff61e1087fb]
+	(No symbol) [0x0x7ff61e0e0153]
+	(No symbol) [0x0x7ff61e0a8b02]
+	(No symbol) [0x0x7ff61e0a98d3]
+	GetHandleVerifier [0x0x7ff61e59e83d+2949837]
+	GetHandleVerifier [0x0x7ff61e598c6a+2926330]
+	GetHandleVerifier [0x0x7ff61e5b86c7+3055959]
+	GetHandleVerifier [0x0x7ff61e2fcfee+191102]
+	GetHandleVerifier [0x0x7ff61e3050af+224063]
+	GetHandleVerifier [0x0x7ff61e2eaf64+117236]
+	GetHandleVerifier [0x0x7ff61e2eb119+117673]
+	GetHandleVerifier [0x0x7ff61e2d10a8+11064]
+	BaseThreadInitThunk [0x0x7ffbde8fe8d7+23]
+	RtlUserThreadStart [0x0x7ffbdee3c34c+44]
+
+
+[2025/10/07 16:26:32] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 51, in login_ifuse
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/ul/li[5]/a/i"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff61e2e1eb5+80197]
+	GetHandleVerifier [0x0x7ff61e2e1f10+80288]
+	(No symbol) [0x0x7ff61e0602fa]
+	(No symbol) [0x0x7ff61e0b7cd7]
+	(No symbol) [0x0x7ff61e0b7f9c]
+	(No symbol) [0x0x7ff61e10ba87]
+	(No symbol) [0x0x7ff61e0e03bf]
+	(No symbol) [0x0x7ff61e1087fb]
+	(No symbol) [0x0x7ff61e0e0153]
+	(No symbol) [0x0x7ff61e0a8b02]
+	(No symbol) [0x0x7ff61e0a98d3]
+	GetHandleVerifier [0x0x7ff61e59e83d+2949837]
+	GetHandleVerifier [0x0x7ff61e598c6a+2926330]
+	GetHandleVerifier [0x0x7ff61e5b86c7+3055959]
+	GetHandleVerifier [0x0x7ff61e2fcfee+191102]
+	GetHandleVerifier [0x0x7ff61e3050af+224063]
+	GetHandleVerifier [0x0x7ff61e2eaf64+117236]
+	GetHandleVerifier [0x0x7ff61e2eb119+117673]
+	GetHandleVerifier [0x0x7ff61e2d10a8+11064]
+	BaseThreadInitThunk [0x0x7ffbde8fe8d7+23]
+	RtlUserThreadStart [0x0x7ffbdee3c34c+44]
+
+
+[2025/10/07 18:04:33] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 263, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 40, in login_ifuse
+    browse = config_selenium()
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 31, in config_selenium
+    browse = webdriver.Chrome(service=service,options=chrome_options,use_subprocess=False)
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'use_subprocess'

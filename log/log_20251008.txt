@@ -1,0 +1,515 @@
+
+[2025/10/08 10:59:41] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 249, in maintain_load_keyConfig
+    for item in range(model.rowCount()):
+                      ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'rowCount'
+
+[2025/10/08 11:00:07] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 249, in maintain_load_keyConfig
+    for item in range(model.rowCount()):
+                      ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'rowCount'
+
+[2025/10/08 11:00:21] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 249, in maintain_load_keyConfig
+    for item in range(model.rowCount()):
+                      ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'rowCount'
+
+[2025/10/08 11:30:14] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 249, in maintain_load_keyConfig
+    for item in range(model.rowCount()):
+                      ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'rowCount'
+
+[2025/10/08 13:11:00] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 548, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 247, in main_chk
+    mapp_region = df_loc_mapping.iloc[0,7].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/08 13:11:37] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 548, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 247, in main_chk
+    mapp_region = df_loc_mapping.iloc[0,7].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/08 13:12:17] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 548, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 247, in main_chk
+    mapp_region = df_loc_mapping.iloc[0,7].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/08 13:16:18] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 548, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 247, in main_chk
+    mapp_region = df_loc_mapping.iloc[0,7].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/08 13:19:20] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 548, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 247, in main_chk
+    mapp_region = df_loc_mapping.iloc[0,7].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/08 13:19:46] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 548, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 247, in main_chk
+    mapp_region = df_loc_mapping.iloc[0,7].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/08 13:20:39] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 548, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 247, in main_chk
+    mapp_region = df_loc_mapping.iloc[0,7].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/08 13:26:39] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 249, in maintain_load_keyConfig
+    for item in range(model.rowCount()):
+                      ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'rowCount'
+
+[2025/10/08 13:26:42] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 249, in maintain_load_keyConfig
+    for item in range(model.rowCount()):
+                      ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'rowCount'
+
+[2025/10/08 14:19:59] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 282, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_sku,dict_region)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 471, in des_maintain
+    des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]').text()
+TypeError: 'str' object is not callable
+
+[2025/10/08 14:58:20] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 282, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_sku,dict_region)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 406, in des_maintain
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/ul/li[5]/a/i"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7182cfca5+79861]
+	GetHandleVerifier [0x0x7ff7182cfd00+79952]
+	(No symbol) [0x0x7ff71804cada]
+	(No symbol) [0x0x7ff7180a4457]
+	(No symbol) [0x0x7ff7180a471c]
+	(No symbol) [0x0x7ff7180f8217]
+	(No symbol) [0x0x7ff7180ccb1f]
+	(No symbol) [0x0x7ff7180f4f8b]
+	(No symbol) [0x0x7ff7180cc8b3]
+	(No symbol) [0x0x7ff718095272]
+	(No symbol) [0x0x7ff718096043]
+	GetHandleVerifier [0x0x7ff71858b9dd+2946349]
+	GetHandleVerifier [0x0x7ff718585c5a+2922410]
+	GetHandleVerifier [0x0x7ff7185a59e7+3052855]
+	GetHandleVerifier [0x0x7ff7182eaa8e+189918]
+	GetHandleVerifier [0x0x7ff7182f2a2f+222591]
+	GetHandleVerifier [0x0x7ff7182d8ac4+116244]
+	GetHandleVerifier [0x0x7ff7182d8c79+116681]
+	GetHandleVerifier [0x0x7ff7182bf058+11176]
+	BaseThreadInitThunk [0x0x7ff8bfdfe8d7+23]
+	RtlUserThreadStart [0x0x7ff8c0e9c34c+44]
+
+
+[2025/10/08 14:58:38] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 282, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_sku,dict_region)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 407, in des_maintain
+    product_tab.click()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[2025/10/08 15:08:36] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 282, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_sku,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: call_maintain_single() takes 6 positional arguments but 7 were given
+
+[2025/10/08 15:11:24] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 282, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_sku,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 471, in des_maintain
+    des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]').send_keys(df_value.iloc[0,2])
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 304, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7182cfca5+79861]
+	GetHandleVerifier [0x0x7ff7182cfd00+79952]
+	(No symbol) [0x0x7ff71804c8fc]
+	(No symbol) [0x0x7ff71809d9d3]
+	(No symbol) [0x0x7ff71809b7f0]
+	(No symbol) [0x0x7ff7180ccada]
+	(No symbol) [0x0x7ff718096bc6]
+	(No symbol) [0x0x7ff7180cccf0]
+	(No symbol) [0x0x7ff7180f4f8b]
+	(No symbol) [0x0x7ff7180cc8b3]
+	(No symbol) [0x0x7ff718095272]
+	(No symbol) [0x0x7ff718096043]
+	GetHandleVerifier [0x0x7ff71858b9dd+2946349]
+	GetHandleVerifier [0x0x7ff718585c5a+2922410]
+	GetHandleVerifier [0x0x7ff7185a59e7+3052855]
+	GetHandleVerifier [0x0x7ff7182eaa8e+189918]
+	GetHandleVerifier [0x0x7ff7182f2a2f+222591]
+	GetHandleVerifier [0x0x7ff7182d8ac4+116244]
+	GetHandleVerifier [0x0x7ff7182d8c79+116681]
+	GetHandleVerifier [0x0x7ff7182bf058+11176]
+	BaseThreadInitThunk [0x0x7ff8bfdfe8d7+23]
+	RtlUserThreadStart [0x0x7ff8c0e9c34c+44]
+
+
+[2025/10/08 15:18:48] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 285, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_sku,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 471, in des_maintain
+    des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]').send_keys(df_value.iloc[0,2])
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 304, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7182cfca5+79861]
+	GetHandleVerifier [0x0x7ff7182cfd00+79952]
+	(No symbol) [0x0x7ff71804c8fc]
+	(No symbol) [0x0x7ff71809d9d3]
+	(No symbol) [0x0x7ff71809b7f0]
+	(No symbol) [0x0x7ff7180ccada]
+	(No symbol) [0x0x7ff718096bc6]
+	(No symbol) [0x0x7ff7180cccf0]
+	(No symbol) [0x0x7ff7180f4f8b]
+	(No symbol) [0x0x7ff7180cc8b3]
+	(No symbol) [0x0x7ff718095272]
+	(No symbol) [0x0x7ff718096043]
+	GetHandleVerifier [0x0x7ff71858b9dd+2946349]
+	GetHandleVerifier [0x0x7ff718585c5a+2922410]
+	GetHandleVerifier [0x0x7ff7185a59e7+3052855]
+	GetHandleVerifier [0x0x7ff7182eaa8e+189918]
+	GetHandleVerifier [0x0x7ff7182f2a2f+222591]
+	GetHandleVerifier [0x0x7ff7182d8ac4+116244]
+	GetHandleVerifier [0x0x7ff7182d8c79+116681]
+	GetHandleVerifier [0x0x7ff7182bf058+11176]
+	BaseThreadInitThunk [0x0x7ff8bfdfe8d7+23]
+	RtlUserThreadStart [0x0x7ff8c0e9c34c+44]
+
+
+[2025/10/08 15:23:45] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 258, in maintain_load_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 134, in gen_std
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/08 15:23:53] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 258, in maintain_load_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 134, in gen_std
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/08 15:28:28] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 471, in des_maintain
+    des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]').send_keys(df_value.iloc[0,2])
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 304, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7182cfca5+79861]
+	GetHandleVerifier [0x0x7ff7182cfd00+79952]
+	(No symbol) [0x0x7ff71804c8fc]
+	(No symbol) [0x0x7ff71809d9d3]
+	(No symbol) [0x0x7ff71809b7f0]
+	(No symbol) [0x0x7ff7180ccada]
+	(No symbol) [0x0x7ff718096bc6]
+	(No symbol) [0x0x7ff7180cccf0]
+	(No symbol) [0x0x7ff7180f4f8b]
+	(No symbol) [0x0x7ff7180cc8b3]
+	(No symbol) [0x0x7ff718095272]
+	(No symbol) [0x0x7ff718096043]
+	GetHandleVerifier [0x0x7ff71858b9dd+2946349]
+	GetHandleVerifier [0x0x7ff718585c5a+2922410]
+	GetHandleVerifier [0x0x7ff7185a59e7+3052855]
+	GetHandleVerifier [0x0x7ff7182eaa8e+189918]
+	GetHandleVerifier [0x0x7ff7182f2a2f+222591]
+	GetHandleVerifier [0x0x7ff7182d8ac4+116244]
+	GetHandleVerifier [0x0x7ff7182d8c79+116681]
+	GetHandleVerifier [0x0x7ff7182bf058+11176]
+	BaseThreadInitThunk [0x0x7ff8bfdfe8d7+23]
+	RtlUserThreadStart [0x0x7ff8c0e9c34c+44]
+
+
+[2025/10/08 15:30:57] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 473, in des_maintain
+    des_k.send_keys(df_value.iloc[0,2])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 304, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7182cfca5+79861]
+	GetHandleVerifier [0x0x7ff7182cfd00+79952]
+	(No symbol) [0x0x7ff71804c8fc]
+	(No symbol) [0x0x7ff71809d9d3]
+	(No symbol) [0x0x7ff71809b7f0]
+	(No symbol) [0x0x7ff7180ccada]
+	(No symbol) [0x0x7ff718096bc6]
+	(No symbol) [0x0x7ff7180cccf0]
+	(No symbol) [0x0x7ff7180f4f8b]
+	(No symbol) [0x0x7ff7180cc8b3]
+	(No symbol) [0x0x7ff718095272]
+	(No symbol) [0x0x7ff718096043]
+	GetHandleVerifier [0x0x7ff71858b9dd+2946349]
+	GetHandleVerifier [0x0x7ff718585c5a+2922410]
+	GetHandleVerifier [0x0x7ff7185a59e7+3052855]
+	GetHandleVerifier [0x0x7ff7182eaa8e+189918]
+	GetHandleVerifier [0x0x7ff7182f2a2f+222591]
+	GetHandleVerifier [0x0x7ff7182d8ac4+116244]
+	GetHandleVerifier [0x0x7ff7182d8c79+116681]
+	GetHandleVerifier [0x0x7ff7182bf058+11176]
+	BaseThreadInitThunk [0x0x7ff8bfdfe8d7+23]
+	RtlUserThreadStart [0x0x7ff8c0e9c34c+44]
+
+
+[2025/10/08 15:46:22] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 463, in des_maintain
+    key_name = tds[3].text.strip()
+               ^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 110, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7182cfca5+79861]
+	GetHandleVerifier [0x0x7ff7182cfd00+79952]
+	(No symbol) [0x0x7ff71804cada]
+	(No symbol) [0x0x7ff71805461a]
+	(No symbol) [0x0x7ff71805770f]
+	(No symbol) [0x0x7ff7180577cf]
+	(No symbol) [0x0x7ff71809de36]
+	(No symbol) [0x0x7ff7180ccada]
+	(No symbol) [0x0x7ff718096bc6]
+	(No symbol) [0x0x7ff7180cccf0]
+	(No symbol) [0x0x7ff7180f4f8b]
+	(No symbol) [0x0x7ff7180cc8b3]
+	(No symbol) [0x0x7ff718095272]
+	(No symbol) [0x0x7ff718096043]
+	GetHandleVerifier [0x0x7ff71858b9dd+2946349]
+	GetHandleVerifier [0x0x7ff718585c5a+2922410]
+	GetHandleVerifier [0x0x7ff7185a59e7+3052855]
+	GetHandleVerifier [0x0x7ff7182eaa8e+189918]
+	GetHandleVerifier [0x0x7ff7182f2a2f+222591]
+	GetHandleVerifier [0x0x7ff7182d8ac4+116244]
+	GetHandleVerifier [0x0x7ff7182d8c79+116681]
+	GetHandleVerifier [0x0x7ff7182bf058+11176]
+	BaseThreadInitThunk [0x0x7ff8bfdfe8d7+23]
+	RtlUserThreadStart [0x0x7ff8c0e9c34c+44]
+

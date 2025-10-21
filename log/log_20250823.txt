@@ -1,0 +1,16 @@
+
+[2025/08/23 13:36:55] Occur Error : 
+ -File name: C:\01_Job\05_Code\02_PE\02_PE\common.py 
+ -Function : list_file_in_folder 
+ -Line Name: 17 
+ -Error Content: name 'get_sys_path_sql' is not defined
+[2025/08/23 13:38:31] Occur Error : 
+ -File name: C:\01_Job\05_Code\02_PE\02_PE\common.py 
+ -Function : list_file_in_folder 
+ -Line Name: 17 
+ -Error Content: name 'get_sys_path_sql' is not defined
+[2025/08/23 13:39:10] Occur Error : 
+ -File name: C:\01_Job\05_Code\02_PE\02_PE\common.py 
+ -Function : list_file_in_folder 
+ -Line Name: 17 
+ -Error Content: name 'get_sys_path_sql' is not defined

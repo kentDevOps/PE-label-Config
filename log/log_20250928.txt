@@ -1,0 +1,42 @@
+
+[2025/09/28 22:51:51] Uncaught Exception:
+Traceback (most recent call last):
+  File "D:\01_Code\00_Python\02_PE\main.py", line 207, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01_Code\00_Python\02_PE\dataProcess.py", line 75, in main_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4212, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/28 22:57:49] Occur Error : 
+ -File name: c:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py 
+ -Function : _get_value 
+ -Line Name: 4212 
+ -Error Content: index 0 is out of bounds for axis 0 with size 0
+[2025/09/28 23:03:11] Occur Error : 
+ -File name: c:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py 
+ -Function : _get_value 
+ -Line Name: 4212 
+ -Error Content: index 0 is out of bounds for axis 0 with size 0
+[2025/09/28 23:04:59] Occur Error : 
+ Traceback (most recent call last):
+  File "D:\01_Code\00_Python\02_PE\main.py", line 207, in keyconfig_create
+    output_path,df = main_generate(project,list_sku,suf_fix,product)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01_Code\00_Python\02_PE\dataProcess.py", line 75, in main_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 4212, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0

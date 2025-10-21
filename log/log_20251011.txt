@@ -1,0 +1,221 @@
+
+[2025/10/11 09:01:15] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1471, in update_carton
+    table_content_generate(self,self.ui.tableView,region,sku,upc,imei,line,soft)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\tableContent.py", line 141, in table_content_generate
+    self.add_row(["4-2 IMEI End",imei.split('-')[1]])
+                                 ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/11 10:12:51] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 321, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 141, in gen_std
+    mapp_region = df_loc_mapping.iloc[0,5].strip()
+                  ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/11 10:30:01] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 338, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_suff,dict_region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 189, in login_ifuse
+    Des_list = gen_dict_standard(dict_region[item],list_data,item,'Des')
+                                 ~~~~~~~~~~~^^^^^^
+KeyError: 'GA10424-US-OPT'
+
+[2025/10/11 10:38:20] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 322, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku,suffix)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: gen_std() takes 3 positional arguments but 4 were given
+
+[2025/10/11 10:50:42] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 322, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 134, in gen_std
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/11 10:50:58] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 333, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region,suffix)
+TypeError: login_ifuse() missing 1 required positional argument: 'suffix'
+
+[2025/10/11 10:51:51] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 333, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 82, in login_ifuse
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/ul/li[5]/a/i"}
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff64523fca5+79861]
+	GetHandleVerifier [0x0x7ff64523fd00+79952]
+	(No symbol) [0x0x7ff644fbcada]
+	(No symbol) [0x0x7ff645014457]
+	(No symbol) [0x0x7ff64501471c]
+	(No symbol) [0x0x7ff645068217]
+	(No symbol) [0x0x7ff64503cb1f]
+	(No symbol) [0x0x7ff645064f8b]
+	(No symbol) [0x0x7ff64503c8b3]
+	(No symbol) [0x0x7ff645005272]
+	(No symbol) [0x0x7ff645006043]
+	GetHandleVerifier [0x0x7ff6454fb9dd+2946349]
+	GetHandleVerifier [0x0x7ff6454f5c5a+2922410]
+	GetHandleVerifier [0x0x7ff6455159e7+3052855]
+	GetHandleVerifier [0x0x7ff64525aa8e+189918]
+	GetHandleVerifier [0x0x7ff645262a2f+222591]
+	GetHandleVerifier [0x0x7ff645248ac4+116244]
+	GetHandleVerifier [0x0x7ff645248c79+116681]
+	GetHandleVerifier [0x0x7ff64522f058+11176]
+	BaseThreadInitThunk [0x0x7ffe3d84e8d7+23]
+	RtlUserThreadStart [0x0x7ffe3dd5c34c+44]
+
+
+[2025/10/11 10:52:34] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 333, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 193, in login_ifuse
+    Des_list = gen_dict_standard(dict_region[item],list_data,item,'Des')
+                                 ~~~~~~~~~~~^^^^^^
+KeyError: 'GA09367-US-OPT'
+
+[2025/10/11 13:09:48] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 322, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: gen_std() missing 1 required positional argument: 'suffix'
+
+[2025/10/11 13:15:24] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 322, in realtime_chk_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku,suffix)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 138, in gen_std
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/10/11 13:21:51] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 256, in maintain_load_keyConfig
+    standard_df,dict_region = gen_std(current_project,current_product,list_sku)
+                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: gen_std() missing 1 required positional argument: 'suffix'
+
+[2025/10/11 13:24:07] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 293, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 466, in main_one
+    sku = next(iter(region.values()))
+                    ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'values'
+
+[2025/10/11 13:27:01] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 293, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,region)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 466, in main_one
+    sku = next(iter(region.values()))
+                    ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'values'
+
+[2025/10/11 14:14:16] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 294, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region)
+TypeError: main_one() missing 1 required positional argument: 'suffix'
+
+[2025/10/11 14:25:51] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 294, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 476, in main_one
+    rowsK = browse.find_elements(By.XPATH, xpath_table_rows)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 963, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7d341fca5+79861]
+	GetHandleVerifier [0x0x7ff7d341fd00+79952]
+	(No symbol) [0x0x7ff7d319cada]
+	(No symbol) [0x0x7ff7d3188995]
+	(No symbol) [0x0x7ff7d31adbda]
+	(No symbol) [0x0x7ff7d3224346]
+	(No symbol) [0x0x7ff7d32448c2]
+	(No symbol) [0x0x7ff7d321c8b3]
+	(No symbol) [0x0x7ff7d31e5272]
+	(No symbol) [0x0x7ff7d31e6043]
+	GetHandleVerifier [0x0x7ff7d36db9dd+2946349]
+	GetHandleVerifier [0x0x7ff7d36d5c5a+2922410]
+	GetHandleVerifier [0x0x7ff7d36f59e7+3052855]
+	GetHandleVerifier [0x0x7ff7d343aa8e+189918]
+	GetHandleVerifier [0x0x7ff7d3442a2f+222591]
+	GetHandleVerifier [0x0x7ff7d3428ac4+116244]
+	GetHandleVerifier [0x0x7ff7d3428c79+116681]
+	GetHandleVerifier [0x0x7ff7d340f058+11176]
+	BaseThreadInitThunk [0x0x7ffe3d84e8d7+23]
+	RtlUserThreadStart [0x0x7ffe3dd5c34c+44]
+
+
+[2025/10/11 14:33:29] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 309, in maintain_load_keyConfig
+    self.ui.table_maintain_key.horizontalHeader().setStyleSheet(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        "QHeaderView::section { font-size: 7pt; }"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 76, in columnCount
+    return len(self._df.columns)
+               ^^^^^^^^^^^^^^^^
+AttributeError: Error calling Python override of QAbstractTableModel::columnCount(): 'list' object has no attribute 'columns'

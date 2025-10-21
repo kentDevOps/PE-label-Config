@@ -1,0 +1,249 @@
+
+[2025/09/30 11:12:41] Occur Error : 
+ Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 217, in keyconfig_create
+    for row in range(model.rowCount()):
+                     ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'rowCount'
+
+[2025/09/30 11:12:42] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 177, in bulk_single_inspect
+    df = main_chk(project,product,key_path)
+  File "c:\01_Job\05_Code\02_PE\02_PE\dataChk.py", line 32, in main_chk
+    chk_mandatary_file(config_path,mapping_path,keyFile_path)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 16, in chk_mandatary_file
+    raise FileNotFoundError(f"File Standard '{os.path.basename(mapping_path)}' Is Not Exists!!!")
+FileNotFoundError: File Standard '' Is Not Exists!!!
+
+[2025/09/30 11:14:19] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 42, in change_language
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/ul/li[5]/a/i"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6a4201eb5+80197]
+	GetHandleVerifier [0x0x7ff6a4201f10+80288]
+	(No symbol) [0x0x7ff6a3f802fa]
+	(No symbol) [0x0x7ff6a3fd7cd7]
+	(No symbol) [0x0x7ff6a3fd7f9c]
+	(No symbol) [0x0x7ff6a402ba87]
+	(No symbol) [0x0x7ff6a40003bf]
+	(No symbol) [0x0x7ff6a40287fb]
+	(No symbol) [0x0x7ff6a4000153]
+	(No symbol) [0x0x7ff6a3fc8b02]
+	(No symbol) [0x0x7ff6a3fc98d3]
+	GetHandleVerifier [0x0x7ff6a44be83d+2949837]
+	GetHandleVerifier [0x0x7ff6a44b8c6a+2926330]
+	GetHandleVerifier [0x0x7ff6a44d86c7+3055959]
+	GetHandleVerifier [0x0x7ff6a421cfee+191102]
+	GetHandleVerifier [0x0x7ff6a42250af+224063]
+	GetHandleVerifier [0x0x7ff6a420af64+117236]
+	GetHandleVerifier [0x0x7ff6a420b119+117673]
+	GetHandleVerifier [0x0x7ff6a41f10a8+11064]
+	BaseThreadInitThunk [0x0x7ffee8ebe8d7+23]
+	RtlUserThreadStart [0x0x7ffee9f7c34c+44]
+
+
+[2025/09/30 11:16:18] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 166, in auto_upload
+    br = config_selenium()
+  File "c:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 42, in change_language
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/ul/li[5]/a/i"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6a4201eb5+80197]
+	GetHandleVerifier [0x0x7ff6a4201f10+80288]
+	(No symbol) [0x0x7ff6a3f802fa]
+	(No symbol) [0x0x7ff6a3fd7cd7]
+	(No symbol) [0x0x7ff6a3fd7f9c]
+	(No symbol) [0x0x7ff6a402ba87]
+	(No symbol) [0x0x7ff6a40003bf]
+	(No symbol) [0x0x7ff6a40287fb]
+	(No symbol) [0x0x7ff6a4000153]
+	(No symbol) [0x0x7ff6a3fc8b02]
+	(No symbol) [0x0x7ff6a3fc98d3]
+	GetHandleVerifier [0x0x7ff6a44be83d+2949837]
+	GetHandleVerifier [0x0x7ff6a44b8c6a+2926330]
+	GetHandleVerifier [0x0x7ff6a44d86c7+3055959]
+	GetHandleVerifier [0x0x7ff6a421cfee+191102]
+	GetHandleVerifier [0x0x7ff6a42250af+224063]
+	GetHandleVerifier [0x0x7ff6a420af64+117236]
+	GetHandleVerifier [0x0x7ff6a420b119+117673]
+	GetHandleVerifier [0x0x7ff6a41f10a8+11064]
+	BaseThreadInitThunk [0x0x7ffee8ebe8d7+23]
+	RtlUserThreadStart [0x0x7ffee9f7c34c+44]
+
+
+[2025/09/30 14:14:40] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 172, in pack_labelPrint_create
+    packing_labelPrint_generate(project,list_sku,suf_fix,product)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 55, in packing_labelPrint_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/30 14:15:55] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 172, in pack_labelPrint_create
+    packing_labelPrint_generate(project,list_sku,suf_fix,product)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 55, in packing_labelPrint_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/30 14:17:53] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 172, in pack_labelPrint_create
+    packing_labelPrint_generate(project,list_sku,suf_fix,product)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 55, in packing_labelPrint_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/30 14:18:15] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 172, in pack_labelPrint_create
+    packing_labelPrint_generate(project,list_sku,suf_fix,product)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 55, in packing_labelPrint_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/30 14:18:45] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 172, in pack_labelPrint_create
+    packing_labelPrint_generate(project,list_sku,suf_fix,product)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 55, in packing_labelPrint_generate
+    #df_loc_sku.columns = df_loc_sku.columns.str.replace('\xa0', '', regex=False)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/30 14:26:34] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 172, in pack_labelPrint_create
+    packing_labelPrint_generate(project,list_sku,suf_fix,product)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 79, in packing_labelPrint_generate
+    tempId_pl1 = get_temp_id('labelPrint_title','tempId','type','packing','station','pallet1','region','ROR','line','kit')
+  File "C:\01_Job\05_Code\02_PE\02_PE\sqliteProcess.py", line 37, in get_temp_id
+    cur.execute(f"SELECT {tenCot} FROM {tenBang} WHERE {type_col} = ? AND {station_colum} = ? AND {reg_col} = ? AND {line_col} = ?",(type_val,station_value,reg_val,line_val))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: tempId
+
+[2025/09/30 14:56:47] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 626, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/09/30 16:07:37] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 198, in pack_labelPrint_create
+    output_path,df = packing_labelPrint_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 64, in packing_labelPrint_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/30 16:07:53] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 198, in pack_labelPrint_create
+    output_path,df = packing_labelPrint_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 64, in packing_labelPrint_generate
+    mapp_region = df_loc_sku.iloc[0,20].strip()
+                  ~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 1183, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4217, in _get_value
+    return series._values[index]
+           ~~~~~~~~~~~~~~^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+[2025/09/30 16:10:00] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 198, in pack_labelPrint_create
+    output_path,df = packing_labelPrint_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 115, in packing_labelPrint_generate
+    tempId_imei1 = get_temp_id(tab_name,'tempId','type','packing','station','devide','region',region,'line','CLNR')[0][0]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/09/30 22:08:19] Uncaught Exception:
+Traceback (most recent call last):
+  File "D:\02_Code\00_Python\03_pysiide6\back30092025\02_PE\main.py", line 198, in pack_labelPrint_create
+    output_path,df = packing_labelPrint_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\02_Code\00_Python\03_pysiide6\back30092025\02_PE\dataProcess.py", line 92, in packing_labelPrint_generate
+    tempId_car = get_temp_id(tab_name,'tempId','type','packing','station','carton','region',region_1,'line','retail')[0][0]
+                                                                                            ^^^^^^^^
+UnboundLocalError: cannot access local variable 'region_1' where it is not associated with a value

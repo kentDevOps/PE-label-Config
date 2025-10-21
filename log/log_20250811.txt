@@ -1,0 +1,6 @@
+
+[2025/08/11 11:11:22] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\sqlite.py 
+ -Function : create_sql_connect 
+ -Line Name: 6 
+ -Error Content: unable to open database file

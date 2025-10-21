@@ -1,0 +1,46 @@
+
+[2025/08/15 13:54:31] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : __init__ 
+ -Line Name: 65 
+ -Error Content: 'MainWindow' object has no attribute 'original_sku_list'
+[2025/08/15 13:57:32] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : setup_sku_search 
+ -Line Name: 440 
+ -Error Content: 'NoneType' object has no attribute 'rowCount'
+[2025/08/15 13:58:15] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : setup_sku_search 
+ -Line Name: 421 
+ -Error Content: 'NoneType' object has no attribute 'rowCount'
+[2025/08/15 13:59:55] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : setup_sku_search 
+ -Line Name: 421 
+ -Error Content: 'NoneType' object has no attribute 'rowCount'
+[2025/08/15 14:11:17] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : setup_sku_search 
+ -Line Name: 423 
+ -Error Content: 'NoneType' object has no attribute 'rowCount'
+[2025/08/15 14:31:18] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : __init__ 
+ -Line Name: 69 
+ -Error Content: 'NoneType' object has no attribute 'rowCount'
+[2025/08/15 14:35:14] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : __init__ 
+ -Line Name: 69 
+ -Error Content: 'NoneType' object has no attribute 'rowCount'
+[2025/08/15 14:53:01] Occur Error : 
+ -File name: c:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : __init__ 
+ -Line Name: 68 
+ -Error Content: 'NoneType' object has no attribute 'rowCount'
+[2025/08/15 15:20:33] Occur Error : 
+ -File name: C:\01_Job\05_Code\02_PE\02_PE\main.py 
+ -Function : load_sku_data 
+ -Line Name: 83 
+ -Error Content: 'NoneType' object has no attribute 'rowCount'

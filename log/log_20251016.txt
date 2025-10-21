@@ -1,0 +1,186 @@
+
+[2025/10/16 08:45:45] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 301, in maintain_load_keyConfig
+    browse , df_value = des_maintain(user,passW,current_project,list_suff,dict_region,standard_df,list_chkbox)
+                        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 411, in des_maintain
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/ul/li[5]/a/i"}
+  (Session info: chrome=141.0.7390.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76481fca5+79861]
+	GetHandleVerifier [0x0x7ff76481fd00+79952]
+	(No symbol) [0x0x7ff76459cada]
+	(No symbol) [0x0x7ff7645f4457]
+	(No symbol) [0x0x7ff7645f471c]
+	(No symbol) [0x0x7ff764648217]
+	(No symbol) [0x0x7ff76461cb1f]
+	(No symbol) [0x0x7ff764644f8b]
+	(No symbol) [0x0x7ff76461c8b3]
+	(No symbol) [0x0x7ff7645e5272]
+	(No symbol) [0x0x7ff7645e6043]
+	GetHandleVerifier [0x0x7ff764adb9dd+2946349]
+	GetHandleVerifier [0x0x7ff764ad5c5a+2922410]
+	GetHandleVerifier [0x0x7ff764af59e7+3052855]
+	GetHandleVerifier [0x0x7ff76483aa8e+189918]
+	GetHandleVerifier [0x0x7ff764842a2f+222591]
+	GetHandleVerifier [0x0x7ff764828ac4+116244]
+	GetHandleVerifier [0x0x7ff764828c79+116681]
+	GetHandleVerifier [0x0x7ff76480f058+11176]
+	BaseThreadInitThunk [0x0x7ff9d47ee8d7+23]
+	RtlUserThreadStart [0x0x7ff9d5b7c34c+44]
+
+
+[2025/10/16 09:04:09] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 319, in maintain_load_keyConfig
+    main_df = new_config(browse,df_value,main_dict_chk,region,main_df,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 720, in new_config
+    op_key_type.click()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76481fca5+79861]
+	GetHandleVerifier [0x0x7ff76481fd00+79952]
+	(No symbol) [0x0x7ff76459c8fc]
+	(No symbol) [0x0x7ff7645f59c3]
+	(No symbol) [0x0x7ff7645e7338]
+	(No symbol) [0x0x7ff76461cada]
+	(No symbol) [0x0x7ff7645e6bc6]
+	(No symbol) [0x0x7ff76461ccf0]
+	(No symbol) [0x0x7ff764644f8b]
+	(No symbol) [0x0x7ff76461c8b3]
+	(No symbol) [0x0x7ff7645e5272]
+	(No symbol) [0x0x7ff7645e6043]
+	GetHandleVerifier [0x0x7ff764adb9dd+2946349]
+	GetHandleVerifier [0x0x7ff764ad5c5a+2922410]
+	GetHandleVerifier [0x0x7ff764af59e7+3052855]
+	GetHandleVerifier [0x0x7ff76483aa8e+189918]
+	GetHandleVerifier [0x0x7ff764842a2f+222591]
+	GetHandleVerifier [0x0x7ff764828ac4+116244]
+	GetHandleVerifier [0x0x7ff764828c79+116681]
+	GetHandleVerifier [0x0x7ff76480f058+11176]
+	BaseThreadInitThunk [0x0x7ff9d47ee8d7+23]
+	RtlUserThreadStart [0x0x7ff9d5b7c34c+44]
+
+
+[2025/10/16 10:04:37] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1119, in view_region_changed
+    for item_text in sku_list:
+                     ^^^^^^^^
+UnboundLocalError: cannot access local variable 'sku_list' where it is not associated with a value
+
+[2025/10/16 10:15:01] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1341, in view_listsku_clicked
+    self.ui.tx_view_des.setText(Des_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: 'PySide6.QtWidgets.QLineEdit.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLineEdit.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLineEdit.setText(arg__1: str, /)
+
+[2025/10/16 13:47:01] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 325, in maintain_load_keyConfig
+    dict_data_load.extend(main_df)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+[2025/10/16 13:49:54] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 325, in maintain_load_keyConfig
+    dict_data_load.extend(main_df)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+[2025/10/16 13:52:39] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 325, in maintain_load_keyConfig
+    dict_data_load.extend(main_df)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+[2025/10/16 14:01:34] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 325, in maintain_load_keyConfig
+    print(dict_data_load)
+    ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+[2025/10/16 14:03:50] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 325, in maintain_load_keyConfig
+    print(dict_data_load)
+    ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+[2025/10/16 14:07:02] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 325, in maintain_load_keyConfig
+    print(dict_data_load)
+    ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+[2025/10/16 14:47:40] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 305, in maintain_load_keyConfig
+    browse , df_value = des_maintain(user,passW,current_project,list_suff,dict_region,standard_df,list_chkbox)
+                        ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 415, in des_maintain
+    product_config = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/ul/li[9]/a')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6ea78fca5+79861]
+	GetHandleVerifier [0x0x7ff6ea78fd00+79952]
+	(No symbol) [0x0x7ff6ea50cada]
+	(No symbol) [0x0x7ff6ea4f8995]
+	(No symbol) [0x0x7ff6ea51dbda]
+	(No symbol) [0x0x7ff6ea594346]
+	(No symbol) [0x0x7ff6ea5b48c2]
+	(No symbol) [0x0x7ff6ea58c8b3]
+	(No symbol) [0x0x7ff6ea555272]
+	(No symbol) [0x0x7ff6ea556043]
+	GetHandleVerifier [0x0x7ff6eaa4b9dd+2946349]
+	GetHandleVerifier [0x0x7ff6eaa45c5a+2922410]
+	GetHandleVerifier [0x0x7ff6eaa659e7+3052855]
+	GetHandleVerifier [0x0x7ff6ea7aaa8e+189918]
+	GetHandleVerifier [0x0x7ff6ea7b2a2f+222591]
+	GetHandleVerifier [0x0x7ff6ea798ac4+116244]
+	GetHandleVerifier [0x0x7ff6ea798c79+116681]
+	GetHandleVerifier [0x0x7ff6ea77f058+11176]
+	BaseThreadInitThunk [0x0x7ff9d47ee8d7+23]
+	RtlUserThreadStart [0x0x7ff9d5b7c34c+44]
+

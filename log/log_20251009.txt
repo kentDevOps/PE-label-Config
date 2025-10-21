@@ -1,0 +1,1095 @@
+
+[2025/10/09 09:14:12] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 461, in des_maintain
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff710fdfca5+79861]
+	GetHandleVerifier [0x0x7ff710fdfd00+79952]
+	(No symbol) [0x0x7ff710d5cada]
+	(No symbol) [0x0x7ff710d6461a]
+	(No symbol) [0x0x7ff710d6770f]
+	(No symbol) [0x0x7ff710d677cf]
+	(No symbol) [0x0x7ff710db3d07]
+	(No symbol) [0x0x7ff710db471c]
+	(No symbol) [0x0x7ff710da720c]
+	(No symbol) [0x0x7ff710ddcb1f]
+	(No symbol) [0x0x7ff710da6bc6]
+	(No symbol) [0x0x7ff710ddccf0]
+	(No symbol) [0x0x7ff710e04f8b]
+	(No symbol) [0x0x7ff710ddc8b3]
+	(No symbol) [0x0x7ff710da5272]
+	(No symbol) [0x0x7ff710da6043]
+	GetHandleVerifier [0x0x7ff71129b9dd+2946349]
+	GetHandleVerifier [0x0x7ff711295c5a+2922410]
+	GetHandleVerifier [0x0x7ff7112b59e7+3052855]
+	GetHandleVerifier [0x0x7ff710ffaa8e+189918]
+	GetHandleVerifier [0x0x7ff711002a2f+222591]
+	GetHandleVerifier [0x0x7ff710fe8ac4+116244]
+	GetHandleVerifier [0x0x7ff710fe8c79+116681]
+	GetHandleVerifier [0x0x7ff710fcf058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 09:23:50] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 461, in des_maintain
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff710fdfca5+79861]
+	GetHandleVerifier [0x0x7ff710fdfd00+79952]
+	(No symbol) [0x0x7ff710d5cada]
+	(No symbol) [0x0x7ff710d6461a]
+	(No symbol) [0x0x7ff710d6770f]
+	(No symbol) [0x0x7ff710d677cf]
+	(No symbol) [0x0x7ff710db3d07]
+	(No symbol) [0x0x7ff710db471c]
+	(No symbol) [0x0x7ff710da720c]
+	(No symbol) [0x0x7ff710ddcb1f]
+	(No symbol) [0x0x7ff710da6bc6]
+	(No symbol) [0x0x7ff710ddccf0]
+	(No symbol) [0x0x7ff710e04f8b]
+	(No symbol) [0x0x7ff710ddc8b3]
+	(No symbol) [0x0x7ff710da5272]
+	(No symbol) [0x0x7ff710da6043]
+	GetHandleVerifier [0x0x7ff71129b9dd+2946349]
+	GetHandleVerifier [0x0x7ff711295c5a+2922410]
+	GetHandleVerifier [0x0x7ff7112b59e7+3052855]
+	GetHandleVerifier [0x0x7ff710ffaa8e+189918]
+	GetHandleVerifier [0x0x7ff711002a2f+222591]
+	GetHandleVerifier [0x0x7ff710fe8ac4+116244]
+	GetHandleVerifier [0x0x7ff710fe8c79+116681]
+	GetHandleVerifier [0x0x7ff710fcf058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 09:26:20] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 462, in des_maintain
+    if len(tds) >= 4:
+       ~~~^^^^^
+TypeError: object of type 'NoneType' has no len()
+
+[2025/10/09 09:46:29] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 524, in pack_labelPrint_create
+    output_path,df = packing_labelPrint_generate(project,list_sku,suf_fix,product)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\dataProcess.py", line 254, in packing_labelPrint_generate
+    tempId_car = get_temp_id(tab_name,'tempId','type','packing','station','carton','region',region_1,'line','retail')[0][0]
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 09:57:31] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1192, in view_listsku_clicked
+    self.ui.tx_view_carton.setText(carton_name[0][0] + "_" + carton_name[0][1])
+                                   ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:02:18] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1192, in view_listsku_clicked
+    self.ui.tx_view_carton.setText(carton_name[0][0] + "_" + carton_name[0][1])
+                                   ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:02:21] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1192, in view_listsku_clicked
+    self.ui.tx_view_carton.setText(carton_name[0][0] + "_" + carton_name[0][1])
+                                   ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:02:27] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1192, in view_listsku_clicked
+    self.ui.tx_view_carton.setText(carton_name[0][0] + "_" + carton_name[0][1])
+                                   ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:02:40] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1192, in view_listsku_clicked
+    self.ui.tx_view_carton.setText(carton_name[0][0] + "_" + carton_name[0][1])
+                                   ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:03:56] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1192, in view_listsku_clicked
+    self.ui.tx_view_carton.setText(carton_name[0][0] + "_" + carton_name[0][1])
+                                   ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:09:32] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1189, in view_listsku_clicked
+    carton_name = label_print_process(item_value,region_code,"packing","carton","MT5")
+TypeError: label_print_process() missing 1 required positional argument: 'key'
+
+[2025/10/09 10:11:52] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:11:55] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:12:01] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:12:54] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:14:32] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:14:44] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:16:19] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:16:40] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:16:47] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:16:50] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:17:29] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:17:33] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:17:41] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:17:44] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:17:46] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1253, in view_listsku_clicked
+    self.ui.tx_view_ship.setText(ship_name[0][0] + "_" + ship_name[0][1])
+                                 ~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/09 10:18:33] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1234, in view_listsku_clicked
+    self.ui.tx_view_qr.setText(qr_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'PySide6.QtWidgets.QLineEdit.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLineEdit.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLineEdit.setText(arg__1: str, /)
+
+[2025/10/09 10:18:37] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1222, in view_listsku_clicked
+    self.ui.tx_view_des.setText(Des_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: 'PySide6.QtWidgets.QLineEdit.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLineEdit.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLineEdit.setText(arg__1: str, /)
+
+[2025/10/09 10:18:40] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1222, in view_listsku_clicked
+    self.ui.tx_view_des.setText(Des_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: 'PySide6.QtWidgets.QLineEdit.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLineEdit.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLineEdit.setText(arg__1: str, /)
+
+[2025/10/09 10:18:48] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1222, in view_listsku_clicked
+    self.ui.tx_view_des.setText(Des_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: 'PySide6.QtWidgets.QLineEdit.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLineEdit.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLineEdit.setText(arg__1: str, /)
+
+[2025/10/09 10:29:34] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: des_maintain() takes 6 positional arguments but 7 were given
+
+[2025/10/09 10:29:49] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: des_maintain() takes 6 positional arguments but 7 were given
+
+[2025/10/09 10:37:07] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 461, in des_maintain
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79765fca5+79861]
+	GetHandleVerifier [0x0x7ff79765fd00+79952]
+	(No symbol) [0x0x7ff7973dcada]
+	(No symbol) [0x0x7ff7973e461a]
+	(No symbol) [0x0x7ff7973e770f]
+	(No symbol) [0x0x7ff7973e77cf]
+	(No symbol) [0x0x7ff797433d07]
+	(No symbol) [0x0x7ff79743471c]
+	(No symbol) [0x0x7ff79742720c]
+	(No symbol) [0x0x7ff79745cb1f]
+	(No symbol) [0x0x7ff797426bc6]
+	(No symbol) [0x0x7ff79745ccf0]
+	(No symbol) [0x0x7ff797484f8b]
+	(No symbol) [0x0x7ff79745c8b3]
+	(No symbol) [0x0x7ff797425272]
+	(No symbol) [0x0x7ff797426043]
+	GetHandleVerifier [0x0x7ff79791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff797915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7979359e7+3052855]
+	GetHandleVerifier [0x0x7ff79767aa8e+189918]
+	GetHandleVerifier [0x0x7ff797682a2f+222591]
+	GetHandleVerifier [0x0x7ff797668ac4+116244]
+	GetHandleVerifier [0x0x7ff797668c79+116681]
+	GetHandleVerifier [0x0x7ff79764f058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 10:53:32] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 288, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 517, in main_one
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79765fca5+79861]
+	GetHandleVerifier [0x0x7ff79765fd00+79952]
+	(No symbol) [0x0x7ff7973dcada]
+	(No symbol) [0x0x7ff7973e461a]
+	(No symbol) [0x0x7ff7973e770f]
+	(No symbol) [0x0x7ff7973e77cf]
+	(No symbol) [0x0x7ff797433d07]
+	(No symbol) [0x0x7ff79743471c]
+	(No symbol) [0x0x7ff79742720c]
+	(No symbol) [0x0x7ff79745cb1f]
+	(No symbol) [0x0x7ff797426bc6]
+	(No symbol) [0x0x7ff79745ccf0]
+	(No symbol) [0x0x7ff797484f8b]
+	(No symbol) [0x0x7ff79745c8b3]
+	(No symbol) [0x0x7ff797425272]
+	(No symbol) [0x0x7ff797426043]
+	GetHandleVerifier [0x0x7ff79791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff797915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7979359e7+3052855]
+	GetHandleVerifier [0x0x7ff79767aa8e+189918]
+	GetHandleVerifier [0x0x7ff797682a2f+222591]
+	GetHandleVerifier [0x0x7ff797668ac4+116244]
+	GetHandleVerifier [0x0x7ff797668c79+116681]
+	GetHandleVerifier [0x0x7ff79764f058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 11:05:24] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 517, in main_one
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79765fca5+79861]
+	GetHandleVerifier [0x0x7ff79765fd00+79952]
+	(No symbol) [0x0x7ff7973dcada]
+	(No symbol) [0x0x7ff7973e461a]
+	(No symbol) [0x0x7ff7973e770f]
+	(No symbol) [0x0x7ff7973e77cf]
+	(No symbol) [0x0x7ff797433d07]
+	(No symbol) [0x0x7ff79743471c]
+	(No symbol) [0x0x7ff79742720c]
+	(No symbol) [0x0x7ff79745cb1f]
+	(No symbol) [0x0x7ff797426bc6]
+	(No symbol) [0x0x7ff79745ccf0]
+	(No symbol) [0x0x7ff797484f8b]
+	(No symbol) [0x0x7ff79745c8b3]
+	(No symbol) [0x0x7ff797425272]
+	(No symbol) [0x0x7ff797426043]
+	GetHandleVerifier [0x0x7ff79791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff797915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7979359e7+3052855]
+	GetHandleVerifier [0x0x7ff79767aa8e+189918]
+	GetHandleVerifier [0x0x7ff797682a2f+222591]
+	GetHandleVerifier [0x0x7ff797668ac4+116244]
+	GetHandleVerifier [0x0x7ff797668c79+116681]
+	GetHandleVerifier [0x0x7ff79764f058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 11:22:09] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 461, in main_one
+    rowsK = browse.find_elements(By.XPATH, xpath_table_rows)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 963, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79765fca5+79861]
+	GetHandleVerifier [0x0x7ff79765fd00+79952]
+	(No symbol) [0x0x7ff7973dcada]
+	(No symbol) [0x0x7ff7973c8995]
+	(No symbol) [0x0x7ff7973edbda]
+	(No symbol) [0x0x7ff797464346]
+	(No symbol) [0x0x7ff7974848c2]
+	(No symbol) [0x0x7ff79745c8b3]
+	(No symbol) [0x0x7ff797425272]
+	(No symbol) [0x0x7ff797426043]
+	GetHandleVerifier [0x0x7ff79791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff797915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7979359e7+3052855]
+	GetHandleVerifier [0x0x7ff79767aa8e+189918]
+	GetHandleVerifier [0x0x7ff797682a2f+222591]
+	GetHandleVerifier [0x0x7ff797668ac4+116244]
+	GetHandleVerifier [0x0x7ff797668c79+116681]
+	GetHandleVerifier [0x0x7ff79764f058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 11:23:00] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 464, in main_one
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79765fca5+79861]
+	GetHandleVerifier [0x0x7ff79765fd00+79952]
+	(No symbol) [0x0x7ff7973dcada]
+	(No symbol) [0x0x7ff7973e461a]
+	(No symbol) [0x0x7ff7973e770f]
+	(No symbol) [0x0x7ff7973e77cf]
+	(No symbol) [0x0x7ff797433d07]
+	(No symbol) [0x0x7ff79743471c]
+	(No symbol) [0x0x7ff79742720c]
+	(No symbol) [0x0x7ff79745cb1f]
+	(No symbol) [0x0x7ff797426bc6]
+	(No symbol) [0x0x7ff79745ccf0]
+	(No symbol) [0x0x7ff797484f8b]
+	(No symbol) [0x0x7ff79745c8b3]
+	(No symbol) [0x0x7ff797425272]
+	(No symbol) [0x0x7ff797426043]
+	GetHandleVerifier [0x0x7ff79791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff797915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7979359e7+3052855]
+	GetHandleVerifier [0x0x7ff79767aa8e+189918]
+	GetHandleVerifier [0x0x7ff797682a2f+222591]
+	GetHandleVerifier [0x0x7ff797668ac4+116244]
+	GetHandleVerifier [0x0x7ff797668c79+116681]
+	GetHandleVerifier [0x0x7ff79764f058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 11:25:33] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 463, in main_one
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79765fca5+79861]
+	GetHandleVerifier [0x0x7ff79765fd00+79952]
+	(No symbol) [0x0x7ff7973dcada]
+	(No symbol) [0x0x7ff7973e461a]
+	(No symbol) [0x0x7ff7973e770f]
+	(No symbol) [0x0x7ff7973e77cf]
+	(No symbol) [0x0x7ff797433d07]
+	(No symbol) [0x0x7ff79743471c]
+	(No symbol) [0x0x7ff79742720c]
+	(No symbol) [0x0x7ff79745cb1f]
+	(No symbol) [0x0x7ff797426bc6]
+	(No symbol) [0x0x7ff79745ccf0]
+	(No symbol) [0x0x7ff797484f8b]
+	(No symbol) [0x0x7ff79745c8b3]
+	(No symbol) [0x0x7ff797425272]
+	(No symbol) [0x0x7ff797426043]
+	GetHandleVerifier [0x0x7ff79791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff797915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7979359e7+3052855]
+	GetHandleVerifier [0x0x7ff79767aa8e+189918]
+	GetHandleVerifier [0x0x7ff797682a2f+222591]
+	GetHandleVerifier [0x0x7ff797668ac4+116244]
+	GetHandleVerifier [0x0x7ff797668c79+116681]
+	GetHandleVerifier [0x0x7ff79764f058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 11:28:16] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 463, in main_one
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79765fca5+79861]
+	GetHandleVerifier [0x0x7ff79765fd00+79952]
+	(No symbol) [0x0x7ff7973dcada]
+	(No symbol) [0x0x7ff7973e461a]
+	(No symbol) [0x0x7ff7973e770f]
+	(No symbol) [0x0x7ff7973e77cf]
+	(No symbol) [0x0x7ff797433d07]
+	(No symbol) [0x0x7ff79743471c]
+	(No symbol) [0x0x7ff79742720c]
+	(No symbol) [0x0x7ff79745cb1f]
+	(No symbol) [0x0x7ff797426bc6]
+	(No symbol) [0x0x7ff79745ccf0]
+	(No symbol) [0x0x7ff797484f8b]
+	(No symbol) [0x0x7ff79745c8b3]
+	(No symbol) [0x0x7ff797425272]
+	(No symbol) [0x0x7ff797426043]
+	GetHandleVerifier [0x0x7ff79791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff797915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7979359e7+3052855]
+	GetHandleVerifier [0x0x7ff79767aa8e+189918]
+	GetHandleVerifier [0x0x7ff797682a2f+222591]
+	GetHandleVerifier [0x0x7ff797668ac4+116244]
+	GetHandleVerifier [0x0x7ff797668c79+116681]
+	GetHandleVerifier [0x0x7ff79764f058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 11:30:38] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 463, in main_one
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79765fca5+79861]
+	GetHandleVerifier [0x0x7ff79765fd00+79952]
+	(No symbol) [0x0x7ff7973dcada]
+	(No symbol) [0x0x7ff7973e461a]
+	(No symbol) [0x0x7ff7973e770f]
+	(No symbol) [0x0x7ff7973e77cf]
+	(No symbol) [0x0x7ff797433d07]
+	(No symbol) [0x0x7ff79743471c]
+	(No symbol) [0x0x7ff79742720c]
+	(No symbol) [0x0x7ff79745cb1f]
+	(No symbol) [0x0x7ff797426bc6]
+	(No symbol) [0x0x7ff79745ccf0]
+	(No symbol) [0x0x7ff797484f8b]
+	(No symbol) [0x0x7ff79745c8b3]
+	(No symbol) [0x0x7ff797425272]
+	(No symbol) [0x0x7ff797426043]
+	GetHandleVerifier [0x0x7ff79791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff797915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7979359e7+3052855]
+	GetHandleVerifier [0x0x7ff79767aa8e+189918]
+	GetHandleVerifier [0x0x7ff797682a2f+222591]
+	GetHandleVerifier [0x0x7ff797668ac4+116244]
+	GetHandleVerifier [0x0x7ff797668c79+116681]
+	GetHandleVerifier [0x0x7ff79764f058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 11:33:32] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 460, in main_one
+    rowsK = browse.find_elements(By.XPATH, xpath_table_rows)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 963, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79765fca5+79861]
+	GetHandleVerifier [0x0x7ff79765fd00+79952]
+	(No symbol) [0x0x7ff7973dcada]
+	(No symbol) [0x0x7ff7973c8995]
+	(No symbol) [0x0x7ff7973edbda]
+	(No symbol) [0x0x7ff797464346]
+	(No symbol) [0x0x7ff7974848c2]
+	(No symbol) [0x0x7ff79745c8b3]
+	(No symbol) [0x0x7ff797425272]
+	(No symbol) [0x0x7ff797426043]
+	GetHandleVerifier [0x0x7ff79791b9dd+2946349]
+	GetHandleVerifier [0x0x7ff797915c5a+2922410]
+	GetHandleVerifier [0x0x7ff7979359e7+3052855]
+	GetHandleVerifier [0x0x7ff79767aa8e+189918]
+	GetHandleVerifier [0x0x7ff797682a2f+222591]
+	GetHandleVerifier [0x0x7ff797668ac4+116244]
+	GetHandleVerifier [0x0x7ff797668c79+116681]
+	GetHandleVerifier [0x0x7ff79764f058+11176]
+	BaseThreadInitThunk [0x0x7ffe9ee8e8d7+23]
+	RtlUserThreadStart [0x0x7ffe9f79c34c+44]
+
+
+[2025/10/09 13:13:53] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000232D61EAE00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 21, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 463, in main_one
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 451, in execute
+    response = cast(RemoteConnection, self.command_executor).execute(driver_command, params)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=62556): Max retries exceeded with url: /session/06761ae55b79a58bd3c2cf15e3dfdbb5/element/f.AAB9984A72675942A767822F401D6FAE.d.25E034A7C6D14965700610B3799DD783.e.3437/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000232D61EAE00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+[2025/10/09 13:25:20] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026D9F6F8C30>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    main_one(browse,df_value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 463, in main_one
+    tds = row.find_elements(By.TAG_NAME, 'td')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 631, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 451, in execute
+    response = cast(RemoteConnection, self.command_executor).execute(driver_command, params)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=59085): Max retries exceeded with url: /session/56bd05dd032233238936b913aa0381ff/element/f.8D4C881B845DD4089E5389E2EB174DCD.d.D549EE6D0F5A6F144E51AAD1322BC960.e.3439/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026D9F6F8C30>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+[2025/10/09 13:49:00] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 289, in maintain_load_keyConfig
+    call_maintain_single(key,user,passW,current_project,list_suff,dict_region,standard_df,key_list)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 19, in call_maintain_single
+    des_maintain(tx_user,tx_pass,project,sku_list,dict_region,dfValue,key_name,list_chkbox)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 457, in des_maintain
+    for key, value in list_chkbox.items():
+                      ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'

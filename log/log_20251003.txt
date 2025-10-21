@@ -1,0 +1,368 @@
+
+[2025/10/03 08:15:46] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 72, in label_infor_return
+    BOB_code = str(mapping.loc[condition, mapping.columns[bob_col]].item())
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\base.py", line 422, in item
+    raise ValueError("can only convert an array of size 1 to a Python scalar")
+ValueError: can only convert an array of size 1 to a Python scalar
+
+[2025/10/03 08:15:59] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 72, in label_infor_return
+    BOB_code = str(mapping.loc[condition, mapping.columns[bob_col]].item())
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\base.py", line 422, in item
+    raise ValueError("can only convert an array of size 1 to a Python scalar")
+ValueError: can only convert an array of size 1 to a Python scalar
+
+[2025/10/03 08:20:34] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 72, in label_infor_return
+    BOB_code = str(mapping.loc[condition, mapping.columns[bob_col]].item())
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\base.py", line 422, in item
+    raise ValueError("can only convert an array of size 1 to a Python scalar")
+ValueError: can only convert an array of size 1 to a Python scalar
+
+[2025/10/03 08:25:55] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 72, in label_infor_return
+    print(mapping.loc[condition, mapping.columns[bob_col]].item())
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\base.py", line 422, in item
+    raise ValueError("can only convert an array of size 1 to a Python scalar")
+ValueError: can only convert an array of size 1 to a Python scalar
+
+[2025/10/03 08:37:00] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 752, in view_combo_box_text_changed
+    pd_mapping = pd.read_excel(mapp_path,sheet_name='FL5_POR_
+[2025/10/03 08:37:11] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 752, in view_combo_box_text_changed
+    pd_mapping = pd.read_excel(mapp_path,sheet_name='FL5_POR_
+[2025/10/03 08:37:31] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 752, in view_combo_box_text_changed
+    pd_mapping = pd.read_excel(mapp_path,sheet_name='FL5_POR_
+[2025/10/03 08:38:25] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 97, in label_infor_return
+    Des_code = mapping.loc[condition, mapping.columns[des_col]].item()
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\base.py", line 422, in item
+    raise ValueError("can only convert an array of size 1 to a Python scalar")
+ValueError: can only convert an array of size 1 to a Python scalar
+
+[2025/10/03 08:39:22] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 97, in label_infor_return
+    Des_code = mapping.loc[condition, mapping.columns[des_col]].item()
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\base.py", line 422, in item
+    raise ValueError("can only convert an array of size 1 to a Python scalar")
+ValueError: can only convert an array of size 1 to a Python scalar
+
+[2025/10/03 08:40:56] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 97, in label_infor_return
+    Des_code = mapping.loc[condition, mapping.columns[des_col]].item()
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\base.py", line 422, in item
+    raise ValueError("can only convert an array of size 1 to a Python scalar")
+ValueError: can only convert an array of size 1 to a Python scalar
+
+[2025/10/03 08:58:32] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 98, in label_infor_return
+    Des_code = mapping.loc[condition, mapping.columns[des_col]].iiloc[0]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 6318, in __getattr__
+    return object.__getattribute__(self, name)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AttributeError: 'Series' object has no attribute 'iiloc'. Did you mean: 'iloc'?
+
+[2025/10/03 08:59:23] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 124, in label_infor_return
+    if len()>1:
+       ~~~^^
+TypeError: len() takes exactly one argument (0 given)
+
+[2025/10/03 09:00:42] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 130, in label_infor_return
+    sw_ver = sw_ver.item()
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\base.py", line 422, in item
+    raise ValueError("can only convert an array of size 1 to a Python scalar")
+ValueError: can only convert an array of size 1 to a Python scalar
+
+[2025/10/03 09:02:45] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1029, in view_listsku_clicked
+    self.ui.tx_view_qr.setText(qr_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'PySide6.QtWidgets.QLineEdit.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLineEdit.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLineEdit.setText(arg__1: str, /)
+
+[2025/10/03 09:02:55] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1017, in view_listsku_clicked
+    self.ui.tx_view_des.setText(Des_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: 'PySide6.QtWidgets.QLineEdit.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLineEdit.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLineEdit.setText(arg__1: str, /)
+
+[2025/10/03 09:02:58] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1017, in view_listsku_clicked
+    self.ui.tx_view_des.setText(Des_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: 'PySide6.QtWidgets.QLineEdit.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLineEdit.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLineEdit.setText(arg__1: str, /)
+
+[2025/10/03 09:06:25] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1012, in view_listsku_clicked
+    sw_ver,start_IMEI,end_IMEI,sap_code,mapp_rap,upc_code,region_code) = label_infor_return(pd_mapping,item_value,4,55,
+                                                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                                                28,56,11,9,68,44,5,"FL5",32,19,20,48,49,50,product)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\common.py", line 76, in label_infor_return
+    BOB_code = str(mapping.loc[condition, mapping.columns[bob_col]].item())
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\base.py", line 422, in item
+    raise ValueError("can only convert an array of size 1 to a Python scalar")
+ValueError: can only convert an array of size 1 to a Python scalar
+
+[2025/10/03 09:11:08] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 419, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 96, in change_language
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/ul/li[5]/a/i"}
+  (Session info: chrome=140.0.7339.208); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff68d551eb5+80197]
+	GetHandleVerifier [0x0x7ff68d551f10+80288]
+	(No symbol) [0x0x7ff68d2d02fa]
+	(No symbol) [0x0x7ff68d327cd7]
+	(No symbol) [0x0x7ff68d327f9c]
+	(No symbol) [0x0x7ff68d37ba87]
+	(No symbol) [0x0x7ff68d3503bf]
+	(No symbol) [0x0x7ff68d3787fb]
+	(No symbol) [0x0x7ff68d350153]
+	(No symbol) [0x0x7ff68d318b02]
+	(No symbol) [0x0x7ff68d3198d3]
+	GetHandleVerifier [0x0x7ff68d80e83d+2949837]
+	GetHandleVerifier [0x0x7ff68d808c6a+2926330]
+	GetHandleVerifier [0x0x7ff68d8286c7+3055959]
+	GetHandleVerifier [0x0x7ff68d56cfee+191102]
+	GetHandleVerifier [0x0x7ff68d5750af+224063]
+	GetHandleVerifier [0x0x7ff68d55af64+117236]
+	GetHandleVerifier [0x0x7ff68d55b119+117673]
+	GetHandleVerifier [0x0x7ff68d5410a8+11064]
+	BaseThreadInitThunk [0x0x7ff8b8c9e8d7+23]
+	RtlUserThreadStart [0x0x7ff8ba05c34c+44]
+
+
+[2025/10/03 14:02:08] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 1054, in view_listsku_clicked
+    self.ui.tx_view_des.setText(Des_code)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: 'PySide6.QtWidgets.QLineEdit.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLineEdit.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLineEdit.setText(arg__1: str, /)
+
+[2025/10/03 14:23:30] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 953, in view_listsku_clicked
+    rev = BOB_code.split('\n')[1][-2:]
+          ~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/03 15:31:02] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1201, in setup_sku_search
+    rs_list = [item for item in sku_list if txt in item.lower()]
+                                                   ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:33:10] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1201, in setup_sku_search
+    rs_list = [item for item in sku_list if txt in item.lower()]
+                                                   ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:34:07] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1201, in setup_sku_search
+    rs_list = [item for item in sku_list if txt in item.lower()]
+                                                   ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:44:22] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1203, in setup_sku_search
+    rs_list = [item for item in sku_list if txt in item.lower()]
+                                                   ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:46:24] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1203, in setup_sku_search
+    rs_list = [item for item in sku_list if txt in item.lower() and len(txt)>6]
+                                                   ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:47:43] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1204, in setup_sku_search
+    if txt in item.lower() and len(txt)>6:
+              ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:49:18] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1204, in setup_sku_search
+    if txt in item.lower() and len(txt)>6:
+              ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:49:58] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1205, in setup_sku_search
+    if txt in item.lower() and len(txt)>6:
+              ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:51:10] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1205, in setup_sku_search
+    if txt in item.lower() and len(txt)>6 and item != 'nan':
+              ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:58:22] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if txt in item.lower() and len(txt)>6 and item.isN:
+              ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 15:59:02] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if txt in item.lower() and len(txt)>6 and item.isN:
+              ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 16:00:47] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if txt in item.lower() and len(txt)>6 and item != 'nan':
+              ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 16:01:52] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if txt in item.lower() and len(txt)>6 and item != 'nan':
+              ^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'lower'
+
+[2025/10/03 16:03:29] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if len(item)>6 and item != 'nan':
+       ~~~^^^^^^
+TypeError: object of type 'float' has no len()
+
+[2025/10/03 16:04:54] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if len(item)>6 and item != 'nan':
+       ~~~^^^^^^
+TypeError: object of type 'float' has no len()
+
+[2025/10/03 16:04:59] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if len(item)>6 and item != 'nan':
+       ~~~^^^^^^
+TypeError: object of type 'float' has no len()
+
+[2025/10/03 16:05:04] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1206, in setup_sku_search
+    if len(item)>6 and item != 'nan':
+       ~~~^^^^^^
+TypeError: object of type 'float' has no len()
