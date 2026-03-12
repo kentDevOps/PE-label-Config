@@ -64,7 +64,7 @@ def filter_project(br,project):
     expand.click()
 def login_ifuse(tx_user,tx_pass,project,sku_list,dict_region,suffix):
     browse = config_selenium()
-    browse.get('http://sfcweb.gg.ftv/Login.aspx')
+    browse.get('https://sfcweb.gg.ftv/Login.aspx')
     bt_language = browse.find_element(By.XPATH,'//*[@id="divLang"]/div/span[1]')
     bt_product = browse.find_element(By.XPATH,'//*[@id="selLocation"]')
     op_google = browse.find_element(By.XPATH,'//*[@id="selLocation"]/option[4]')
@@ -515,6 +515,7 @@ def new_config(browse,df_value,main_dict_chk,region,main_df,suff_item):
             ver.click()
 
             op_key_name.click()
+            time.sleep(1)
             key = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyName"]/option[49]')
             key.click()
             des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]')
@@ -557,6 +558,7 @@ def new_config(browse,df_value,main_dict_chk,region,main_df,suff_item):
             ver.click()
 
             op_key_name.click()
+            time.sleep(1)
             key = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyName"]/option[64]')
             key.click()
             des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]')
@@ -600,6 +602,7 @@ def new_config(browse,df_value,main_dict_chk,region,main_df,suff_item):
             ver.click()
 
             op_key_name.click()
+            time.sleep(1)
             key = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyName"]/option[14]')
             key.click()
             des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]')
@@ -642,6 +645,7 @@ def new_config(browse,df_value,main_dict_chk,region,main_df,suff_item):
             ver.click()
 
             op_key_name.click()
+            time.sleep(1)
             key = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyName"]/option[9]')
             key.click()
             des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]')
@@ -684,6 +688,7 @@ def new_config(browse,df_value,main_dict_chk,region,main_df,suff_item):
             ver.click()
 
             op_key_name.click()
+            time.sleep(1)
             key = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyName"]/option[15]')
             key.click()
             des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]')
@@ -726,6 +731,7 @@ def new_config(browse,df_value,main_dict_chk,region,main_df,suff_item):
         ver.click()
 
         op_key_name.click()
+        time.sleep(1)
         key = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyName"]/option[23]')
         key.click()
         des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]')
@@ -768,6 +774,7 @@ def new_config(browse,df_value,main_dict_chk,region,main_df,suff_item):
         ver.click()
 
         op_key_name.click()
+        time.sleep(1)
         key = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyName"]/option[71]')
         key.click()
         des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]')
@@ -853,6 +860,7 @@ def new_config(browse,df_value,main_dict_chk,region,main_df,suff_item):
         ver.click()
 
         op_key_name.click()
+        time.sleep(1)
         key = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyName"]/option[12]')
         key.click()
         des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]')
@@ -895,6 +903,7 @@ def new_config(browse,df_value,main_dict_chk,region,main_df,suff_item):
         ver.click()
 
         op_key_name.click()
+        time.sleep(1)
         key = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyName"]/option[13]')
         key.click()
         des_k = browse.find_element(By.XPATH,'//*[@id="txtElseBasicKeyDesc"]')

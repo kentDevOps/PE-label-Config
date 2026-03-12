@@ -1,0 +1,45 @@
+
+[2025/10/22 08:30:05] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 334, in maintain_load_keyConfig
+    main_df = new_config(browse,df_value,main_dict_chk,region,main_df,item)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 720, in new_config
+    op_key_type.click()
+    ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6ac69fca5+79861]
+	GetHandleVerifier [0x0x7ff6ac69fd00+79952]
+	(No symbol) [0x0x7ff6ac41c8fc]
+	(No symbol) [0x0x7ff6ac4759c3]
+	(No symbol) [0x0x7ff6ac467338]
+	(No symbol) [0x0x7ff6ac49cada]
+	(No symbol) [0x0x7ff6ac466bc6]
+	(No symbol) [0x0x7ff6ac49ccf0]
+	(No symbol) [0x0x7ff6ac4c4f8b]
+	(No symbol) [0x0x7ff6ac49c8b3]
+	(No symbol) [0x0x7ff6ac465272]
+	(No symbol) [0x0x7ff6ac466043]
+	GetHandleVerifier [0x0x7ff6ac95b9dd+2946349]
+	GetHandleVerifier [0x0x7ff6ac955c5a+2922410]
+	GetHandleVerifier [0x0x7ff6ac9759e7+3052855]
+	GetHandleVerifier [0x0x7ff6ac6baa8e+189918]
+	GetHandleVerifier [0x0x7ff6ac6c2a2f+222591]
+	GetHandleVerifier [0x0x7ff6ac6a8ac4+116244]
+	GetHandleVerifier [0x0x7ff6ac6a8c79+116681]
+	GetHandleVerifier [0x0x7ff6ac68f058+11176]
+	BaseThreadInitThunk [0x0x7fff9773e8d7+23]
+	RtlUserThreadStart [0x0x7fff993bc34c+44]
+

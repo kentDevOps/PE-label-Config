@@ -35,7 +35,7 @@
          <property name="font">
           <font>
            <family>Stencil</family>
-           <pointsize>40</pointsize>
+           <pointsize>31</pointsize>
           </font>
          </property>
          <property name="layoutDirection">
@@ -45,7 +45,7 @@
           <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>PE Control Label Configuration</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;INTELLIGENT LABEL MANAGEMENT SYSTEM (ILMS)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -2896,6 +2896,93 @@ QPushButton  {
               <enum>QFrame::Shadow::Raised</enum>
              </property>
              <layout class="QGridLayout" name="gridLayout_11">
+              <item row="3" column="0" colspan="2">
+               <layout class="QHBoxLayout" name="horizontalLayout_27">
+                <item>
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>118</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="bt_maintain_print_load">
+                  <property name="minimumSize">
+                   <size>
+                    <width>131</width>
+                    <height>41</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Upload</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>108</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="5" column="0" colspan="2">
+               <widget class="QTableView" name="table_maintain_print_upload"/>
+              </item>
+              <item row="2" column="1">
+               <layout class="QHBoxLayout" name="horizontalLayout_31">
+                <item>
+                 <widget class="QCheckBox" name="chk_maintain_print_carton2">
+                  <property name="text">
+                   <string>Carton 2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chk_maintain_print_overlay">
+                  <property name="text">
+                   <string>Overlay</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chk_maintain_print_wic">
+                  <property name="text">
+                   <string>WIC</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="lb_branch_text_5">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	color:white;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Uploaded List :</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
               <item row="0" column="0">
                <widget class="QLabel" name="lb_branch_text_3">
                 <property name="styleSheet">
@@ -2958,92 +3045,23 @@ QPushButton  {
                 </item>
                </layout>
               </item>
-              <item row="2" column="1">
-               <layout class="QHBoxLayout" name="horizontalLayout_31">
+              <item row="2" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_38">
                 <item>
-                 <widget class="QCheckBox" name="chk_maintain_print_carton2">
+                 <widget class="QCheckBox" name="chk_maintain_print_DEV">
                   <property name="text">
-                   <string>Carton 2</string>
+                   <string>Devide</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QCheckBox" name="chk_maintain_print_overlay">
+                 <widget class="QCheckBox" name="chk_maintain_print_DEV2">
                   <property name="text">
-                   <string>Overlay</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="chk_maintain_print_wic">
-                  <property name="text">
-                   <string>WIC</string>
+                   <string>Devide2</string>
                   </property>
                  </widget>
                 </item>
                </layout>
-              </item>
-              <item row="3" column="0" colspan="2">
-               <layout class="QHBoxLayout" name="horizontalLayout_27">
-                <item>
-                 <spacer name="horizontalSpacer_5">
-                  <property name="orientation">
-                   <enum>Qt::Orientation::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>118</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="bt_maintain_print_load">
-                  <property name="minimumSize">
-                   <size>
-                    <width>131</width>
-                    <height>41</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>Upload</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_6">
-                  <property name="orientation">
-                   <enum>Qt::Orientation::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>108</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-               </layout>
-              </item>
-              <item row="4" column="0">
-               <widget class="QLabel" name="lb_branch_text_5">
-                <property name="styleSheet">
-                 <string notr="true">QLabel
-{
-	color:white;
-}</string>
-                </property>
-                <property name="text">
-                 <string>Uploaded List :</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignmentFlag::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="0" colspan="2">
-               <widget class="QTableView" name="table_maintain_print_upload"/>
               </item>
              </layout>
             </widget>

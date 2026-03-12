@@ -1,0 +1,237 @@
+
+[2025/11/25 08:11:59] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\auth\transport\requests.py", line 187, in __call__
+    response = self.session.request(
+        method, url, data=body, headers=headers, timeout=timeout, **kwargs
+    )
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 780, in chk_modify_date
+    mt,bz,fl = get_timer()
+               ~~~~~~~~~^^
+  File "c:\01_Job\05_Code\02_PE\02_PE\gsheet.py", line 14, in get_timer
+    sh = gc.open_by_key(file_ids)
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\gspread\client.py", line 206, in open_by_key
+    spreadsheet = Spreadsheet(self, {"id": key})
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\gspread\spreadsheet.py", line 37, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\gspread\spreadsheet.py", line 245, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\gspread\client.py", line 80, in request
+    response = getattr(self.session, method)(
+        endpoint,
+    ...<5 lines>...
+        timeout=self.timeout,
+    )
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\auth\transport\requests.py", line 535, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\auth\credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\auth\credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\oauth2\service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+                              ~~~~~~~~~~~~~~~~~^
+        request, self._token_uri, assertion
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\oauth2\_client.py", line 299, in jwt_grant
+    response_data = _token_endpoint_request(
+        request,
+    ...<5 lines>...
+        },
+    )
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\oauth2\_client.py", line 259, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<6 lines>...
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\oauth2\_client.py", line 192, in _token_endpoint_request_no_throw
+    response = request(
+        method="POST", url=token_uri, headers=headers_to_use, body=body, **kwargs
+    )
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\auth\transport\requests.py", line 194, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+[2025/11/25 08:32:11] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 692, in auto_upload
+    br = config_selenium()
+  File "c:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 57, in config_selenium
+    browse = webdriver.Chrome(service=service,options=chrome_options)
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 69, in __init__
+    super().__init__(command_executor=executor, options=options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 362, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 142.0.7444.176 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff77de3fca5+79861]
+	GetHandleVerifier [0x0x7ff77de3fd00+79952]
+	(No symbol) [0x0x7ff77dbbcada]
+	(No symbol) [0x0x7ff77dc01f94]
+	(No symbol) [0x0x7ff77dc00fac]
+	(No symbol) [0x0x7ff77dbfab6a]
+	(No symbol) [0x0x7ff77dbf6340]
+	(No symbol) [0x0x7ff77dc4a84f]
+	(No symbol) [0x0x7ff77dc49fd0]
+	(No symbol) [0x0x7ff77dc3c8b3]
+	(No symbol) [0x0x7ff77dc05272]
+	(No symbol) [0x0x7ff77dc06043]
+	GetHandleVerifier [0x0x7ff77e0fb9dd+2946349]
+	GetHandleVerifier [0x0x7ff77e0f5c5a+2922410]
+	GetHandleVerifier [0x0x7ff77e1159e7+3052855]
+	GetHandleVerifier [0x0x7ff77de5aa8e+189918]
+	GetHandleVerifier [0x0x7ff77de62a2f+222591]
+	GetHandleVerifier [0x0x7ff77de48ac4+116244]
+	GetHandleVerifier [0x0x7ff77de48c79+116681]
+	GetHandleVerifier [0x0x7ff77de2f058+11176]
+	BaseThreadInitThunk [0x0x7ffa6b8ce8d7+23]
+	RtlUserThreadStart [0x0x7ffa6db3c34c+44]
+
+
+[2025/11/25 08:38:51] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 695, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 327, in change_language
+    bt_language = browse.find_element(By.XPATH,'//*[@id="divLang"]/div/span[1]')
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6367c7a35
+	0x7ff6367c7a90
+	0x7ff6365416ad
+	0x7ff636518e01
+	0x7ff6365ca0be
+	0x7ff6365eb222
+	0x7ff63658b068
+	0x7ff63658be93
+	0x7ff636a829d0
+	0x7ff636a7ce50
+	0x7ff636a9cc45
+	0x7ff6367e30ce
+	0x7ff6367eadbf
+	0x7ff6367d0c14
+	0x7ff6367d0dcf
+	0x7ff6367b6828
+	0x7ffa6b8ce8d7
+	0x7ffa6db3c34c
+

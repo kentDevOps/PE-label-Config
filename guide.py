@@ -45,7 +45,7 @@ class Ui_MainWindow(object):
         self.lbHeader.setObjectName(u"lbHeader")
         font = QFont()
         font.setFamilies([u"Stencil"])
-        font.setPointSize(40)
+        font.setPointSize(31)
         self.lbHeader.setFont(font)
         self.lbHeader.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.lbHeader.setStyleSheet(u"color: rgb(255, 255, 255);")
@@ -1789,6 +1789,60 @@ class Ui_MainWindow(object):
         self.f_single_Print.setFrameShadow(QFrame.Shadow.Raised)
         self.gridLayout_11 = QGridLayout(self.f_single_Print)
         self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.horizontalLayout_27 = QHBoxLayout()
+        self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
+        self.horizontalSpacer_5 = QSpacerItem(118, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_27.addItem(self.horizontalSpacer_5)
+
+        self.bt_maintain_print_load = QPushButton(self.f_single_Print)
+        self.bt_maintain_print_load.setObjectName(u"bt_maintain_print_load")
+        self.bt_maintain_print_load.setMinimumSize(QSize(131, 41))
+
+        self.horizontalLayout_27.addWidget(self.bt_maintain_print_load)
+
+        self.horizontalSpacer_6 = QSpacerItem(108, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_27.addItem(self.horizontalSpacer_6)
+
+
+        self.gridLayout_11.addLayout(self.horizontalLayout_27, 3, 0, 1, 2)
+
+        self.table_maintain_print_upload = QTableView(self.f_single_Print)
+        self.table_maintain_print_upload.setObjectName(u"table_maintain_print_upload")
+
+        self.gridLayout_11.addWidget(self.table_maintain_print_upload, 5, 0, 1, 2)
+
+        self.horizontalLayout_31 = QHBoxLayout()
+        self.horizontalLayout_31.setObjectName(u"horizontalLayout_31")
+        self.chk_maintain_print_carton2 = QCheckBox(self.f_single_Print)
+        self.chk_maintain_print_carton2.setObjectName(u"chk_maintain_print_carton2")
+
+        self.horizontalLayout_31.addWidget(self.chk_maintain_print_carton2)
+
+        self.chk_maintain_print_overlay = QCheckBox(self.f_single_Print)
+        self.chk_maintain_print_overlay.setObjectName(u"chk_maintain_print_overlay")
+
+        self.horizontalLayout_31.addWidget(self.chk_maintain_print_overlay)
+
+        self.chk_maintain_print_wic = QCheckBox(self.f_single_Print)
+        self.chk_maintain_print_wic.setObjectName(u"chk_maintain_print_wic")
+
+        self.horizontalLayout_31.addWidget(self.chk_maintain_print_wic)
+
+
+        self.gridLayout_11.addLayout(self.horizontalLayout_31, 2, 1, 1, 1)
+
+        self.lb_branch_text_5 = QLabel(self.f_single_Print)
+        self.lb_branch_text_5.setObjectName(u"lb_branch_text_5")
+        self.lb_branch_text_5.setStyleSheet(u"QLabel\n"
+"{\n"
+"	color:white;\n"
+"}")
+        self.lb_branch_text_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_11.addWidget(self.lb_branch_text_5, 4, 0, 1, 1)
+
         self.lb_branch_text_3 = QLabel(self.f_single_Print)
         self.lb_branch_text_3.setObjectName(u"lb_branch_text_3")
         self.lb_branch_text_3.setStyleSheet(u"QLabel\n"
@@ -1834,59 +1888,20 @@ class Ui_MainWindow(object):
 
         self.gridLayout_11.addLayout(self.horizontalLayout_30, 1, 0, 1, 2)
 
-        self.horizontalLayout_31 = QHBoxLayout()
-        self.horizontalLayout_31.setObjectName(u"horizontalLayout_31")
-        self.chk_maintain_print_carton2 = QCheckBox(self.f_single_Print)
-        self.chk_maintain_print_carton2.setObjectName(u"chk_maintain_print_carton2")
+        self.horizontalLayout_38 = QHBoxLayout()
+        self.horizontalLayout_38.setObjectName(u"horizontalLayout_38")
+        self.chk_maintain_print_DEV = QCheckBox(self.f_single_Print)
+        self.chk_maintain_print_DEV.setObjectName(u"chk_maintain_print_DEV")
 
-        self.horizontalLayout_31.addWidget(self.chk_maintain_print_carton2)
+        self.horizontalLayout_38.addWidget(self.chk_maintain_print_DEV)
 
-        self.chk_maintain_print_overlay = QCheckBox(self.f_single_Print)
-        self.chk_maintain_print_overlay.setObjectName(u"chk_maintain_print_overlay")
+        self.chk_maintain_print_DEV2 = QCheckBox(self.f_single_Print)
+        self.chk_maintain_print_DEV2.setObjectName(u"chk_maintain_print_DEV2")
 
-        self.horizontalLayout_31.addWidget(self.chk_maintain_print_overlay)
-
-        self.chk_maintain_print_wic = QCheckBox(self.f_single_Print)
-        self.chk_maintain_print_wic.setObjectName(u"chk_maintain_print_wic")
-
-        self.horizontalLayout_31.addWidget(self.chk_maintain_print_wic)
+        self.horizontalLayout_38.addWidget(self.chk_maintain_print_DEV2)
 
 
-        self.gridLayout_11.addLayout(self.horizontalLayout_31, 2, 1, 1, 1)
-
-        self.horizontalLayout_27 = QHBoxLayout()
-        self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
-        self.horizontalSpacer_5 = QSpacerItem(118, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self.horizontalLayout_27.addItem(self.horizontalSpacer_5)
-
-        self.bt_maintain_print_load = QPushButton(self.f_single_Print)
-        self.bt_maintain_print_load.setObjectName(u"bt_maintain_print_load")
-        self.bt_maintain_print_load.setMinimumSize(QSize(131, 41))
-
-        self.horizontalLayout_27.addWidget(self.bt_maintain_print_load)
-
-        self.horizontalSpacer_6 = QSpacerItem(108, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self.horizontalLayout_27.addItem(self.horizontalSpacer_6)
-
-
-        self.gridLayout_11.addLayout(self.horizontalLayout_27, 3, 0, 1, 2)
-
-        self.lb_branch_text_5 = QLabel(self.f_single_Print)
-        self.lb_branch_text_5.setObjectName(u"lb_branch_text_5")
-        self.lb_branch_text_5.setStyleSheet(u"QLabel\n"
-"{\n"
-"	color:white;\n"
-"}")
-        self.lb_branch_text_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
-
-        self.gridLayout_11.addWidget(self.lb_branch_text_5, 4, 0, 1, 1)
-
-        self.table_maintain_print_upload = QTableView(self.f_single_Print)
-        self.table_maintain_print_upload.setObjectName(u"table_maintain_print_upload")
-
-        self.gridLayout_11.addWidget(self.table_maintain_print_upload, 5, 0, 1, 2)
+        self.gridLayout_11.addLayout(self.horizontalLayout_38, 2, 0, 1, 1)
 
 
         self.gridLayout_18.addWidget(self.f_single_Print, 1, 2, 1, 1)
@@ -2280,7 +2295,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.lbHeader.setText(QCoreApplication.translate("MainWindow", u"PE Control Label Configuration", None))
+        self.lbHeader.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>INTELLIGENT LABEL MANAGEMENT SYSTEM (ILMS)</p></body></html>", None))
         self.lb_view_caption.setText(QCoreApplication.translate("MainWindow", u"Check Label Configuration By SKU", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Search SKU :", None))
         self.label_36.setText(QCoreApplication.translate("MainWindow", u"Product :", None))
@@ -2362,6 +2377,11 @@ class Ui_MainWindow(object):
         self.chk_maintain_qr.setText(QCoreApplication.translate("MainWindow", u"QR_CODE", None))
         self.bt_maintain_load_key.setText(QCoreApplication.translate("MainWindow", u"Upload", None))
         self.lb_branch_text_4.setText(QCoreApplication.translate("MainWindow", u"Uploaded List :", None))
+        self.bt_maintain_print_load.setText(QCoreApplication.translate("MainWindow", u"Upload", None))
+        self.chk_maintain_print_carton2.setText(QCoreApplication.translate("MainWindow", u"Carton 2", None))
+        self.chk_maintain_print_overlay.setText(QCoreApplication.translate("MainWindow", u"Overlay", None))
+        self.chk_maintain_print_wic.setText(QCoreApplication.translate("MainWindow", u"WIC", None))
+        self.lb_branch_text_5.setText(QCoreApplication.translate("MainWindow", u"Uploaded List :", None))
         self.lb_branch_text_3.setText(QCoreApplication.translate("MainWindow", u"LabelPrint :", None))
         self.chk_maintain_print_all.setText(QCoreApplication.translate("MainWindow", u"All", None))
         self.chk_maintain_print_carton.setText(QCoreApplication.translate("MainWindow", u"Carton", None))
@@ -2369,11 +2389,8 @@ class Ui_MainWindow(object):
         self.chk_maintain_print_pallet2.setText(QCoreApplication.translate("MainWindow", u"Pallet 2", None))
         self.chk_maintain_print_pallet3.setText(QCoreApplication.translate("MainWindow", u"Pallet 3", None))
         self.chk_maintain_print_ship.setText(QCoreApplication.translate("MainWindow", u"Ship", None))
-        self.chk_maintain_print_carton2.setText(QCoreApplication.translate("MainWindow", u"Carton 2", None))
-        self.chk_maintain_print_overlay.setText(QCoreApplication.translate("MainWindow", u"Overlay", None))
-        self.chk_maintain_print_wic.setText(QCoreApplication.translate("MainWindow", u"WIC", None))
-        self.bt_maintain_print_load.setText(QCoreApplication.translate("MainWindow", u"Upload", None))
-        self.lb_branch_text_5.setText(QCoreApplication.translate("MainWindow", u"Uploaded List :", None))
+        self.chk_maintain_print_DEV.setText(QCoreApplication.translate("MainWindow", u"Devide", None))
+        self.chk_maintain_print_DEV2.setText(QCoreApplication.translate("MainWindow", u"Devide2", None))
         self.lb_tieuDe_5.setText(QCoreApplication.translate("MainWindow", u"Realtime Checking The Label Configuration In Ifuse", None))
         self.label_74.setText(QCoreApplication.translate("MainWindow", u"Project", None))
         self.label_38.setText(QCoreApplication.translate("MainWindow", u"Product :", None))

@@ -1,0 +1,133 @@
+
+[2025/10/23 11:00:44] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 383, in maintain_load_keyConfig
+    dict_df = main_one(browse,df_value,key,dict_region,suffix)
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 1154, in main_one
+    row.click()
+    ~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 451, in execute
+    response = cast(RemoteConnection, self.command_executor).execute(driver_command, params)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 459, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+[2025/10/23 11:03:04] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 695, in auto_upload
+    change_language(br,user,passW,self.ui.lb_notice.text())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 341, in change_language
+    product_tab = browse.find_element(By.XPATH,'/html/body/div[2]/div[1]/ul/li[5]/a/i')
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff764f4fca5+79861]
+	GetHandleVerifier [0x0x7ff764f4fd00+79952]
+	(No symbol) [0x0x7ff764cccada]
+	(No symbol) [0x0x7ff764cb8995]
+	(No symbol) [0x0x7ff764cddbda]
+	(No symbol) [0x0x7ff764d54346]
+	(No symbol) [0x0x7ff764d748c2]
+	(No symbol) [0x0x7ff764d4c8b3]
+	(No symbol) [0x0x7ff764d15272]
+	(No symbol) [0x0x7ff764d16043]
+	GetHandleVerifier [0x0x7ff76520b9dd+2946349]
+	GetHandleVerifier [0x0x7ff765205c5a+2922410]
+	GetHandleVerifier [0x0x7ff7652259e7+3052855]
+	GetHandleVerifier [0x0x7ff764f6aa8e+189918]
+	GetHandleVerifier [0x0x7ff764f72a2f+222591]
+	GetHandleVerifier [0x0x7ff764f58ac4+116244]
+	GetHandleVerifier [0x0x7ff764f58c79+116681]
+	GetHandleVerifier [0x0x7ff764f3f058+11176]
+	BaseThreadInitThunk [0x0x7fff9773e8d7+23]
+	RtlUserThreadStart [0x0x7fff993bc34c+44]
+

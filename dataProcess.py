@@ -285,8 +285,12 @@ def packing_labelPrint_generate(project,sku_list,suffix,product):
             list_pallet3 = ['PALLET','PALLET',tempId_pl3,1]
             list_carton = ['CARTON','ACP',tempId_car,1]
             list_bts = ['SHIP','SHIP',tempId_bts,5]
-            list_imei1 = ['DEV','IMEI',tempId_imei1,1]
-            list_imei2 = ['DEV2','IMEI1',tempId_imei2,1]
+            if region == 'VZW':
+                list_imei1 = ['DEV','DEVICE',tempId_imei1,1]
+                list_imei2 = ['DEV2','DEVICE1',tempId_imei2,1]          
+            else:
+                list_imei1 = ['DEV','IMEI',tempId_imei1,1]
+                list_imei2 = ['DEV2','IMEI1',tempId_imei2,1]
 
             dic_pl1 = add_information_labelPrint(item,list_pallet1,suffix,sku,station,type,id,qty)
             dic_pl2 = add_information_labelPrint(item,list_pallet2,suffix,sku,station,type,id,qty)

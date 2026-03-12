@@ -1,0 +1,20 @@
+
+[2025/10/27 15:01:37] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1595, in update_carton
+    table_content_generate(self,self.ui.tableView,region,sku,upc,imei,line,soft)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\tableContent.py", line 141, in table_content_generate
+    self.add_row(["4-2 IMEI End",imei.split('-')[1]])
+                                 ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+[2025/10/27 15:01:38] Uncaught Exception:
+Traceback (most recent call last):
+  File "C:\01_Job\05_Code\02_PE\02_PE\main.py", line 1595, in update_carton
+    table_content_generate(self,self.ui.tableView,region,sku,upc,imei,line,soft)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\01_Job\05_Code\02_PE\02_PE\tableContent.py", line 141, in table_content_generate
+    self.add_row(["4-2 IMEI End",imei.split('-')[1]])
+                                 ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range

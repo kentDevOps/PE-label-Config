@@ -212,6 +212,8 @@ class MainWindow(QMainWindow):
             self.ui.bt_maintain_load_sku_2.clicked.connect(self.open_load_sku_form_maintain)
             self.ui.bt_maintain_load_key.clicked.connect(self.maintain_load_keyConfig)
             self.ui.chk_maintain_all.clicked.connect(self.click_unclick_checkbox)
+            self.ui.chk_maintain_print_all.clicked.connect(self.click_unclick_checkbox_print)
+            self.ui.bt_maintain_print_load.clicked.connect(self.maintain_load_labelPrint)
             self.form_b = None
             self.form_m = None
             self.form_bob = None
@@ -236,6 +238,19 @@ class MainWindow(QMainWindow):
         self.statusBar().removeWidget(self.progress)
 #region --- Signal 
 #region, maintain page
+    def click_unclick_checkbox_print(self):
+        list_chkbox = [self.ui.chk_maintain_print_carton,self.ui.chk_maintain_print_carton2,self.ui.chk_maintain_print_overlay,
+                       self.ui.chk_maintain_print_pallet1,self.ui.chk_maintain_print_pallet2,self.ui.chk_maintain_print_pallet3,
+                       self.ui.chk_maintain_print_ship,self.ui.chk_maintain_print_wic,self.ui.chk_maintain_print_DEV,self.ui.chk_maintain_print_DEV2]   
+        flag = self.ui.chk_maintain_print_all.isChecked()
+        if flag == True:
+            for cb in list_chkbox:
+                if cb.isChecked() == False:
+                    cb.click()
+        elif flag == False:
+            for cb in list_chkbox:
+                if cb.isChecked() == True:
+                    cb.click() 
     def click_unclick_checkbox(self):
         list_chkbox = [self.ui.chk_maintain_des,self.ui.chk_maintain_upc,self.ui.chk_maintain_brand,
                        self.ui.chk_maintain_blabel,self.ui.chk_maintain_rlabel,self.ui.chk_maintain_sap,self.ui.chk_maintain_color,
@@ -248,7 +263,64 @@ class MainWindow(QMainWindow):
         elif flag == False:
             for cb in list_chkbox:
                 if cb.isChecked() == True:
-                    cb.click()            
+                    cb.click()       
+    def maintain_load_labelPrint(self):
+        # check data input
+        current_product = self.ui.cb_maintain_product_2.currentText()
+        current_project = self.ui.cb_maintain_project_2.currentText()
+        suffix = self.ui.tx_maintain_surfix_2.text()
+        if current_product == '' or current_project == '':
+            QMessageBox.critical(self,"Lỗi Khởi Tạo","Cần Chọn Product,Project")
+            return     
+        #Load SKU
+        model = self.ui.list_maintain_sku_2.model()
+        list_sku = []
+        list_suff = []
+        for item in range(model.rowCount()):
+            index = model.index(item,0)
+            value = model.data(index)
+            list_sku.append(value)
+        print("Dữ liệu:", list_sku)
+        #Loc Standard from mapping
+        standard_df,dict_region = gen_std(current_project,current_product,list_sku,suffix)
+        print(standard_df)
+        for item in list_sku:
+            if suffix != '':
+                list_suff.append(value + '-' + suffix)
+            else:
+                list_suff.append(value)
+        print(standard_df)
+        print(dict_region)  
+        list_chkbox = [self.ui.chk_maintain_print_carton,self.ui.chk_maintain_print_carton2,self.ui.chk_maintain_print_overlay,
+                       self.ui.chk_maintain_print_pallet1,self.ui.chk_maintain_print_pallet2,self.ui.chk_maintain_print_pallet3,
+                       self.ui.chk_maintain_print_ship,self.ui.chk_maintain_print_wic,self.ui.chk_maintain_print_DEV,
+                       self.ui.chk_maintain_print_DEV2]   
+        status_dict = {}
+        key_list = []
+        user, ok = QInputDialog.getText(None, "Ifuse Account", "Nhập UserName của bạn:")
+        if ok and user:
+            print("Bạn nhập:", user)
+        passW, ok = QInputDialog.getText(None, "Ifuse Account", "Nhập Password của bạn:",QLineEdit.EchoMode.Password)
+        if ok and passW:
+            print("Bạn nhập:", passW)
+        if user == '' or passW == '':
+            QMessageBox.critical(self, "Lỗi khởi tạo", "Phải nhập Username , Password!")
+            return
+        for cb in list_chkbox:
+            status_dict[cb.text()] = cb.isChecked()
+            key_list.append(cb.text())
+        print(status_dict)
+        if not any(status_dict.values()):
+            QMessageBox.critical(self,"Lỗi Khởi Tạo","Cần Tích Chọn Một Checkbox")
+            return    
+        dict_data_load = []
+        dict_df = {}
+        main_df = {} 
+        for item in list_suff:
+            browse , df_value = des_maintain(user,passW,current_project,list_suff,dict_region,standard_df,list_chkbox)
+            region = next(iter(dict_region.values()))
+            # Check carton, pallet, ship configuration
+            
     def maintain_load_keyConfig(self):
         # check data input
         current_product = self.ui.cb_maintain_product_2.currentText()

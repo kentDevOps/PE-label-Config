@@ -1,0 +1,59 @@
+
+[2025/11/17 14:01:48] Uncaught Exception:
+Traceback (most recent call last):
+  File "c:\01_Job\05_Code\02_PE\02_PE\main.py", line 456, in realtime_chk_keyConfig
+    ifuse_df = login_ifuse(user,passW,current_project,list_sku,dict_region,suffix)
+  File "c:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 66, in login_ifuse
+    browse = config_selenium()
+  File "c:\01_Job\05_Code\02_PE\02_PE\selenium_process.py", line 57, in config_selenium
+    browse = webdriver.Chrome(service=service,options=chrome_options)
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 69, in __init__
+    super().__init__(command_executor=executor, options=options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 261, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 362, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\V1537224\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 142.0.7444.163 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76147fca5+79861]
+	GetHandleVerifier [0x0x7ff76147fd00+79952]
+	(No symbol) [0x0x7ff7611fcada]
+	(No symbol) [0x0x7ff761241f94]
+	(No symbol) [0x0x7ff761240fac]
+	(No symbol) [0x0x7ff76123ab6a]
+	(No symbol) [0x0x7ff761236340]
+	(No symbol) [0x0x7ff76128a84f]
+	(No symbol) [0x0x7ff761289fd0]
+	(No symbol) [0x0x7ff76127c8b3]
+	(No symbol) [0x0x7ff761245272]
+	(No symbol) [0x0x7ff761246043]
+	GetHandleVerifier [0x0x7ff76173b9dd+2946349]
+	GetHandleVerifier [0x0x7ff761735c5a+2922410]
+	GetHandleVerifier [0x0x7ff7617559e7+3052855]
+	GetHandleVerifier [0x0x7ff76149aa8e+189918]
+	GetHandleVerifier [0x0x7ff7614a2a2f+222591]
+	GetHandleVerifier [0x0x7ff761488ac4+116244]
+	GetHandleVerifier [0x0x7ff761488c79+116681]
+	GetHandleVerifier [0x0x7ff76146f058+11176]
+	BaseThreadInitThunk [0x0x7ff97e0ce8d7+23]
+	RtlUserThreadStart [0x0x7ff97f35c34c+44]
+
